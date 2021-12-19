@@ -38,8 +38,8 @@ export default function Map(props) {
   }
 
   return (
-      <ReactMapGL {...viewport} onViewportChange={nextViewport => setViewport(nextViewport)} >
-          <Source id="countries" type='vector' url='mapbox://mapbox.country-boundaries-v1'>
+      <ReactMapGL {...viewport} onViewportChange={nextViewport => setViewport(nextViewport)} mapStyle='mapbox://styles/rustom-ichhaporia/ckxcv6hbt4oxs14o5tg4za93s'>
+          <Source id="countries" type='vector' url='mapbox://mapbox.country-boundaries-v1' >
             <Layer {...layerProps} source-layer='country_boundaries'/>
           </Source>
       </ReactMapGL>
