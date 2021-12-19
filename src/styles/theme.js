@@ -10,6 +10,7 @@ const palette = {
     blue: '#4287f5',
     lightBlue: '#79cafc',
     darkBlue: '#0a1930',
+    darkerBlue: '060e1a',
     grey4: '#cccccc',
     grey3: '#999999',
     grey2: '#444444',
@@ -21,6 +22,7 @@ const palette = {
     colors: {
       background: palette.darkBlue,
       backgroundLight: palette.grey2,
+      backgroundDark: palette.darkerBlue,
       text: palette.grey4,
       textLight: palette.grey4,
       accent: palette.peach2,

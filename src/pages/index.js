@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import styled, { css, ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
 import { Map, Menu, Sidebar } from '@components';
 
@@ -15,7 +15,7 @@ const Container = styled.div`
 // `;
 
 export default function Home() {
-  const [dimension, setDimension] = useState('Power Distance');
+  const [dimension, setDimension] = useState('Masculinity');
 
   const sidebarStyle = {width: '40vw', position: 'absolute', left: '0px', top: '0px', background: theme.colors.background};
 
@@ -25,7 +25,7 @@ export default function Home() {
         <GlobalStyle />
         <Container>
           {/* <ChildContainer> */}
-            <Map mapWidth={'100%'} dimension={dimension}/>
+            <Map mapWidth={'100%'} dimension={dimension} />
             <Menu />
             <Sidebar style={sidebarStyle}/>
           {/* </ChildContainer> */}

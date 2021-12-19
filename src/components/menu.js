@@ -13,7 +13,7 @@ const variants = {
 
 const itemIds = [0, 1, 2, 3, 4];
 
-export default function Menu() {
+export default function Menu(props) {
     return (
   <motion.ul variants={variants}>
     {itemIds.map(i => (
