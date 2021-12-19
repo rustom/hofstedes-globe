@@ -2,12 +2,12 @@ import { createGlobalStyle } from 'styled-components';
 import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
-  html {
-    cursor: none;
-    a:link {
-      cursor: none;
-    }
-  }
+  // html {
+  //   cursor: none;
+  //   a:link {
+  //     cursor: none;
+  //   }
+  // }
 
   body {
     margin: 0;

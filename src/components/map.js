@@ -5,9 +5,9 @@ import data from '@data/hofstede';
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoicnVzdG9tLWljaGhhcG9yaWEiLCJhIjoiY2t4Y3YxNWN6M2RpeDJwbXVpdnlsYWducSJ9.14tOov0CCEUjhs99yMRdbA';
 
-export default function Map() {
+export default function Map(props) {
   const [viewport, setViewport] = useState({
-    width: window.innerWidth * 0.8,
+    width: props.mapWidth,
     height: window.innerHeight,
     zoom: 0, 
     mapboxApiAccessToken: MAPBOX_TOKEN
@@ -38,12 +38,10 @@ export default function Map() {
   }
 
   return (
-    <>
       <ReactMapGL {...viewport} onViewportChange={nextViewport => setViewport(nextViewport)} >
           <Source id="countries" type='vector' url='mapbox://mapbox.country-boundaries-v1'>
             <Layer {...layerProps} source-layer='country_boundaries'/>
           </Source>
       </ReactMapGL>
-    </>
   )
 }
