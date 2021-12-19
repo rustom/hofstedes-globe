@@ -10,8 +10,13 @@ export default function Sidebar() {
   return (
     <Container>
       <h1>
-        Hi
+        Hofstede's Globe 
       </h1>
+
+      <p>
+        Hofstede's Globe is a tool for visualizing Geert Hofstede's 6 Cultural Dimensions. 
+      </p>
+
     </Container>
   )
 }

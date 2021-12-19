@@ -5,11 +5,6 @@ import data from '@data/hofstede';
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoicnVzdG9tLWljaGhhcG9yaWEiLCJhIjoiY2t4Y3YxNWN6M2RpeDJwbXVpdnlsYWducSJ9.14tOov0CCEUjhs99yMRdbA';
 
-// const Container = styled.div`
-//     width: 80vw;
-//     height: 100vh;
-// `;
-
 export default function Map() {
   const [viewport, setViewport] = useState({
     width: window.innerWidth * 0.8,
