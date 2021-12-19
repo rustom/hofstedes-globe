@@ -5,7 +5,7 @@ import { Map, Menu, Sidebar } from '@components';
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh; 
+  height: 100vh;
   // display: inline-block;
   // display: flex;
   // flex-direction: row;
@@ -17,7 +17,13 @@ const Container = styled.div`
 export default function Home() {
   const [dimension, setDimension] = useState('Masculinity');
 
-  const sidebarStyle = {width: '40vw', position: 'absolute', left: '0px', top: '0px', background: theme.colors.background};
+  const sidebarStyle = {
+    width: '40vw',
+    position: 'absolute',
+    left: '0px',
+    top: '0px',
+    background: theme.colors.background,
+  };
 
   return (
     <>
@@ -25,14 +31,14 @@ export default function Home() {
         <GlobalStyle />
         <Container>
           {/* <ChildContainer> */}
-            <Map mapWidth={'100%'} dimension={dimension} />
-            <Menu />
-            <Sidebar style={sidebarStyle}/>
+          <Map mapWidth={'100%'} dimension={dimension} />
+          <Menu />
+          <Sidebar style={sidebarStyle} />
           {/* </ChildContainer> */}
           {/* <ChildContainer style={{position: 'absolute'}}> */}
           {/* </ChildContainer> */}
         </Container>
       </ThemeProvider>
     </>
-  )
+  );
 }
