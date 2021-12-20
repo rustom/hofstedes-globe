@@ -31,7 +31,7 @@ const variants = {
 const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
 
 export default function Sidebar(props) {
-  const style = { border: `2px solid ${colors[0]}` };
+  // const style = { border: `2px solid ${colors[0]}` };
 
   return (
     <Container style={props.style}>
@@ -42,7 +42,7 @@ export default function Sidebar(props) {
         Dimensions. What's that?
       </p>
 
-      <Menu />
+      <Menu dimensions={props.dimensions} setDimension={props.setDimension} />
     </Container>
   );
 }

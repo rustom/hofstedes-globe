@@ -22,7 +22,7 @@ export default function Map(props) {
     logo: false,
   });
 
-  const column = 'Power Distance';
+  const column = props.dimension;
 
   const matchExpression = ['match', ['get', 'iso_3166_1_alpha_3']];
 
@@ -33,7 +33,7 @@ export default function Map(props) {
         ? 0
         : row[column];
     intensity = intensity * 0.4 + 20; //100 - intensity * 0.5;
-    console.log(intensity);
+    // console.log(intensity);
     const color = `hsl(17.9, 100%, ${intensity}%)`;
 
     matchExpression.push(row['Country Code'], color);
