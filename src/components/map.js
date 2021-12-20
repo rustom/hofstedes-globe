@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import ReactMapGL, { Source, Layer } from 'react-map-gl';
-import data from '@data/hofstede';
+import data from '@data/data_new';
 
 const MAPBOX_TOKEN =
   'pk.eyJ1IjoicnVzdG9tLWljaGhhcG9yaWEiLCJhIjoiY2t4Y3YxNWN6M2RpeDJwbXVpdnlsYWducSJ9.14tOov0CCEUjhs99yMRdbA';
