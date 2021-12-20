@@ -9,6 +9,7 @@ const Container = styled.div`
   // height: 100%;
   box-shadow: 0 0 50px black;
   border-radius: 0 0 40px 0;
+  padding: 3%;
 `;
 
 const variants = {

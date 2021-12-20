@@ -27,11 +27,12 @@ export default function MenuItem(props) {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
+      onClick={() => props.stateSetter(props.dimension)}
     >
-      <div className="icon-placeholder" style={style} />
-      <p className="text-placeholder" style={style}>
+      {/* <div className="icon-placeholder" style={style} /> */}
+      {/* <p style={style}> */}
         {props.dimension}
-      </p>
+      {/* </p> */}
     </motion.li>
   );
 }
