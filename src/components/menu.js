@@ -1,6 +1,8 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { MenuItem } from '@components';
+import { property } from 'css-tree';
 
 const variants = {
   open: {
@@ -11,14 +13,30 @@ const variants = {
   },
 };
 
-const itemIds = [0, 1, 2, 3, 4];
+const DimensionSelector = styled(motion.ul)`
+  list-style-type: none;
+`;
 
 export default function Menu(props) {
+  // const changeDimension = function(newDimension) {
+  //   console.log(newDimension);
+  //   props.setDimension(newDimension);
+  // }
+
   return (
-    <motion.ul variants={variants}>
-      {itemIds.map((i) => (
-        <MenuItem i={i} key={i} />
-      ))}
-    </motion.ul>
+    <DimensionSelector variants={variants}>
+      {props.dimensions &&
+        props.dimensions.map((dimension, i) => {
+          return (
+            <MenuItem
+              i={i}
+              key={i}
+              dimension={dimension}
+              stateSetter={props.setDimension}
+              // onClick={() => {changeDimension(dimension)}}
+            />
+          );
+        })}
+    </DimensionSelector>
   );
 }

@@ -1,4 +1,4 @@
-const data = [
+const data_old = [
   {
     'Country Code': 'AFE',
     Country: 'Africa East',

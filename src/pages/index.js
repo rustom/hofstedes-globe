@@ -15,7 +15,7 @@ const Container = styled.div`
 // `;
 
 export default function Home() {
-  const [dimension, setDimension] = useState('Masculinity');
+  const [dimension, setDimension] = useState('Power Distance');
 
   const sidebarStyle = {
     width: '40vw',
@@ -25,6 +25,15 @@ export default function Home() {
     background: theme.colors.background,
   };
 
+  const dimensionList = [
+    'Power Distance',
+    'Individualism',
+    'Masculinity',
+    'Uncertainty Avoidance',
+    'Long Term Orientation',
+    'Indulgence',
+  ];
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -32,8 +41,12 @@ export default function Home() {
         <Container>
           {/* <ChildContainer> */}
           <Map mapWidth={'100%'} dimension={dimension} />
-          <Menu />
-          <Sidebar style={sidebarStyle} />
+          {/* <Menu /> */}
+          <Sidebar
+            style={sidebarStyle}
+            dimensions={dimensionList}
+            setDimension={setDimension}
+          />
           {/* </ChildContainer> */}
           {/* <ChildContainer style={{position: 'absolute'}}> */}
           {/* </ChildContainer> */}

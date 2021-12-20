@@ -1,0 +1,184 @@
+ctr,country,alpha-2,pdi,pdi-x,idv,idv-x,mas,mas-x,uai,uai-x,ltowvs,lto-x,ivr,ivr-x,source-x,n.b.,continent,population
+AFE,Africa East, ,64, ,27, ,41, ,52, ,32, ,40, , ,"Kenya, Ethiopia, Tanzania, Zambia",,
+AFW,Africa West, ,77, ,20, ,46, ,54, ,9, ,78, , ,"Ghana, Nigeria, Sierra Leone",,
+ ,Afghanistan,AF, ,55, ,14, ,60, ,70, ,30, ,10,gj, ,Asia,38041754
+ALB,Albania,AL, ,90, ,20, ,80, ,70,61, ,15, ,gj, ,Europe,2880917
+ALG,Algeria,DZ, ,70, ,50, ,50, ,70,26, ,32, ,gj, ,Africa,43053054
+AND,Andorra,AD, ,50, ,50, ,40, ,90, ,50,65,40,gj, ,Europe,77142
+ ,Angola,AO, ,83, ,18, ,20, ,60, ,15,,83,itim, ,Africa,31825295
+ARA,Arab countries, ,80, ,38, ,53, ,68, ,23, ,34, , ,"Egypt, Iraq, Kuwait, Lebanon, Libya, Saudi Arab, UAR",,
+ARG,Argentina,AR,49,,46,,56,,86,,20,,62,,,,Americas,44780677
+ARM,Armenia,AM, ,60, ,40, ,40, ,90,61,, ,30,gj,,Asia,2957731
+AUL,Australia,AU,38,,90,,61,,51,,21,,71,,,,Oceania,25203198
+AUT,Austria,AT,11,,55,,79,,70,,60,,63,,,,Europe,8955102
+AZE,Azerbaijan,AZ, ,60, ,40, ,40, ,90,61,,22,,gj,,Asia,10047718
+BAN,Bangladesh,BD,80,,20,,55,,60,,47,,20,,,,Asia,163046161
+BLR,Belarus,BY, ,90, ,40, ,30, ,90,81,,15,,gj,,Europe,9452411
+BEL,Belgium,BE,65,,75,,54,,94,,82,,57,,,,Europe,11539328
+BEF,Belgium French,,67,,72,,60,,93,, ,82, ,52,gj,niet gebruiken,,
+BEN,Belgium Netherl,,61,,78,,43,,97,, ,82, ,62,gj,niet gebruiken,,
+,Benin,BJ,,80,,15,,40,,65,,5,,80,gj,,Africa,11801151
+,Bhutan,BT, ,94,,52,,32,,28,,60,,25,itim: gj (lto ivr),,Asia,763092
+,Bolivia,BO,,78,,8,,63,,67,,25, ,50,gj, ,Americas,11513100
+BOS,Bosnia,BA, ,80, ,30, ,40, ,90,70, ,44, ,gj,,Europe,3301000
+,Botswana,BW,,60,,40,,30,,50,,40, ,40,gj,,Africa,2303697
+BRA,Brazil,BR,69,,38,,49,,76,,44,,59,,,,Americas,211049527
+,Brunei,BN,,104,,26,,50,,36,,41,,57,gj,,Asia,433285
+BUL,Bulgaria,BG,70,,30,,40,,85,,69,,16,,,,Europe,7000119
+BUF,Burkina Faso,BF, ,70, ,15, ,50, ,55,27,,18,,itim,,Africa,20321378
+,Burundi,BI,,70, ,25, ,60, ,50,18,,37,,gj,,Africa,10864245
+,Cambodia,KH,,80,,20,,50,,60,,50,,30,gj,,Asia,16486542
+,Cameroon,CM,,80,,10,,50,,50,,10,,80,gj,,Africa,25876380
+CAN,Canada,CA,39,,80,,52,,48,,36,,68,,,,Americas,37411047
+CAF,Canada French,,54,,73,,45,,60,, ,40, ,50,gj,,,
+,Cape Verde,CV,,75,,20,,15,,40,,12,,83,itim,,Africa,549935
+,Central African Rep,CF,,80,,20,,60,,60,,10,,20,gj,,Africa,4745185
+,Chad,TD,,80,,20,,60,,60,,10,,20,gj,,Africa,15946876
+CHL,Chile,CL,63,,23,,28,,86,,31,,68,,,,Americas,18952038
+CHI,China,CN,80,,20,,66,,30,,87,,24,,,,Asia,1433783686
+COL,Colombia,CO,67,,13,,64,,80,,13,,83,,,,Americas,50339443
+,Congo,CG,,80,,20,,60,,50,,10,,80,gj,,Africa,5380508
+,Congo Dep. Republic,CD,,80,,20,,60,,50,,10,,80,gj,,Africa,86790567
+COS,Costa Rica,CR,35,,15,,21,,86,, ,30, ,90,gj,,Americas,5047561
+,Cote d'Ivoire,CI,,80,,20,,40,,50,,20,,40,gj,,Africa,25716544
+CRO,Croatia,HR,73,,33,,40,,80,,58,,33,,,,Europe,4130304
+,Cuba,CU,,80,,20,,40,,70,,20,,80,gj,,Americas,11333483
+CYP,Cyprus,CY, ,60, ,30, ,40, ,90, ,45,70, ,gj,,Asia,1179551
+CZE,Czech Rep,CZ,57,,58,,57,,74,,70,,29,,,,Europe,10689209
+DEN,Denmark,DK,18,,74,,16,,23,,35,,70,,,,Europe,5771876
+,Djibouti,DJ,,70, ,20, ,65, ,55, ,10, ,20,gj,,Africa,973560
+DOM,Dominican Rep,DO, ,80, ,20, ,40, ,50,13,,54,,gj,,Americas,10738958
+ECA,Ecuador,EC,78,,8,,63,,67,, ,25, ,70,gj,,Americas,17373662
+,Equatorial Guinea,GQ,,80,,20,,60,,50,,10,,80,gj,,Africa,1355986
+EGY,Egypt,EG, ,70, ,25, ,45, ,80,7,,4,,itim,,Africa,100388073
+SAL,El Salvador,SV,66,,19,,40,,94,,20,,89,,,,Americas,6453553
+,Eritrea,ER, ,70, ,25, ,65, ,60, ,10, ,20,gj,,Africa,3497117
+EST,Estonia,EE,40,,60,,30,,60,,82,,16,,,,Europe,1325648
+,Eswatini,SZ,,70, ,30, ,40, ,50, ,15, ,70,gj,,Africa,1148130
+ETH,Ethiopia,ET, ,70, ,20, ,65, ,55, ,10, ,20,itim: gj (lto ivr),,Africa,112078730
+,Fiji,FJ,,78,,14,,46,,48,,50,,50,itim: gj (lto ivr),,Oceania,889953
+FIN,Finland,FI,33,,63,,26,,59,,38,,57,,,,Europe,5532156
+FRA,France,FR,68,,71,,43,,86,,63,,48,,,,Europe,65129728
+,Gabon,GA,,80,,25,,45,,50,,20,,60,gj,,Africa,2172579
+,Gambia,GM,,70,,25,,45,,55,,25,,40,gj,,Africa,2347706
+GEO,Georgia,GE, ,80, ,40, ,50, ,90,38,,32,,gj,,Asia,3996765
+GER,Germany,DE,35,,67,,66,,65,,83,,40,,,,Europe,83517045
+GEE,Germany East,, ,, ,, ,, ,,78,,34,,,niet gebruiken,,
+GHA,Ghana,GH, ,80, ,30, ,40, ,65,4,,72,,itim/gj,,Africa,28833629
+GBR,Great Britain,GB,35,,89,,66,,35,,51,,69,,,,Europe,67530172
+GRE,Greece,GR,60,,35,,57,,112,,45,,50,,,,Europe,10473455
+,Greenland,GL,,20,,50,,20,,40,,30,,70,gj,,Americas,56672
+GUA,Guatemala,GT,95,,6,,37,,101,, ,20, ,90,gj,,Americas,17581472
+,Guiana French,GF,,85,,47,,37,,92,,20, ,80,gj, ,Americas,282731
+,Guinea,GN,,70,,25,,45,,55,,25,,40,gj,,Africa,12771246
+,Guinea-Bissau,GW,,70,,25,,45,,55,,25,,40,gj,,Africa,1920922
+,Guyana British,GY,,85,,47,,37,,92,,20, ,80,gj,,Americas,782766
+,Haiti,HT,,80, ,20, ,40, ,50,5,,80,,gj,,Americas,11263770
+,Honduras,HN, ,80, ,20,,40,,70,,20,,90,itim/gj,,Americas,9746117
+HOK,Hong Kong,HK,68,,25,,57,,29,,61,,17,,,,Asia,7436154
+HUN,Hungary,HU,46,,80,,88,,82,,58,,31,,,,Europe,9684679
+ICE,Iceland,IS, ,30, ,60, ,10, ,50,28,,67,,itim,,Europe,339031
+IND,India,IN,77,,48,,56,,40,,51,,26,,,,Asia,1366417754
+IDO,Indonesia,ID,78,,14,,46,,48,,62,,38,,,,Asia,270625568
+IRA,Iran,IR,58,,41,,43,,59,,14,,40,,,,Asia,82913906
+IRQ,Iraq,IQ, ,95, ,30, ,70, ,85,25,,17,,itim,,Asia,39309783
+IRE,Ireland,IE,28,,70,,68,,35,,24,,65,,,,Europe,4882495
+ISR,Israel,IL,13,,54,,47,,81,,38,, ,40,gj,,Asia,8519377
+ITA,Italy,IT,50,,76,,70,,75,,61,,30,,,,Europe,60550075
+JAM,Jamaica,JM,45,,39,,68,,13,, ,10, ,90,gj,,Americas,2948279
+JPN,Japan,JP,54,,46,,95,,92,,88,,42,,,,Asia,126860301
+JOR,Jordan,JO, ,70, ,30, ,45, ,65,16,,43,,itim,,Asia,10101694
+,Kazakhstan,KZ,,90,,30,,50,,90,,60,,40,gj,,Asia,18551427
+,Kosovo,XK,,80, ,30, ,50, ,90,75,,20,,gj,,Europe,1810366
+,Kenya,KE,,70,,25,,60,,50, ,30,,40,itim: gj (lto ivr),,Africa,52573973
+,Kuwait,KW,,90,,25,,40,,20,,20,,40,itim: gj (lto ivr),,Asia,4207083
+KOR,Korea North,KP,,80,,15,,50,,85,,100,,20,gj,,Asia,25666161
+KOR,Korea South,KR,60,,18,,39,,85,,100,,29,,,,Asia,51225308
+KYR,Kyrgyzstan,KG, ,70, ,30, ,35, ,90,66,,39,,gj,,Asia,6415850
+LAT,Latvia,LV,44,,70,,9,,63,,69,,13,,,,Europe,1906743
+,Laos,LA,,80,,10,,30,,50,,20,,40,gj,,Asia,7169455
+,Lebanon,LB,,75,,40,,50,,50,,14,,60,itim: gj (lto ivr),,Asia,6855713
+ ,Lesotho,LS, ,70, ,30, ,40, ,50, ,15, ,70,gj,,Africa,2125268
+,Liberia,LR,,80,,20,,40,,50,,23,,60,itim,,Africa,4937374
+,Libya,LY,,80,,38,,52,,68,,23, ,34,,,Africa,6777452
+LIT,Lithuania,LT,42,,60,,19,,65,,82,,56,,,,Europe,2759627
+LUX,Luxembourg,LU,40,,60,,50,,70,,64,,35,,gj,,Europe,615729
+MAC,Macedonia Rep,MK, ,80, ,30, ,50, ,90,62,20,,50,gj,,Europe,2083459
+,Madagascar,MG,,80,,10,,50,,50,,30,,42,gj,,Africa,26969307
+,Malawi,MW,,70,,30,,40,,50,,30, ,42,,,Africa,18628747
+MAL,Malaysia,MY,104,,26,,50,,36,,41,,43,,gj,,Asia,31949777
+MLI,Mali,ML, ,80, ,20, ,40, ,50,20,,66,,,,Africa,19658031
+MLT,Malta,MT,56,,59,,47,,96,,47,,66,,gj,,Europe,440372
+,Macedonia North,, ,80, ,30, ,50, ,90,75,20,,25,gj,,,
+,Mauritania,MR,,70,,40,,50,,70,,15, ,10,gj,,Africa,4525696
+MEX,Mexico,MX,81,,30,,69,,82,,24,,97,,gj,,Americas,127575529
+MOL,Moldova,MD, ,90, ,40, ,40, ,90,71, ,19, ,gj,,Europe,4043263
+,Mongolia,MN,,70,,20,,60,,30,,70, ,20,gj,,Asia,3225167
+MNG,Montenegro,ME, ,80, ,30, ,50, ,90,75,,20,,,,Europe,627987
+MOR,Morocco,MA,70,,46,,53,,68,,14, ,25, ,itim,,Africa,36471769
+,Mozambique,MZ,,85,,15,,38,,44,,11,,80,gj,,Africa,30366036
+,Myanmar,MM,,90,,20,,50,,60,,50,,30,itim: gj (lto ivr),,Asia,54045420
+,Namibia,NA,,65,,30,,40,,45,,35,,50,itim: gj (lto ivr),,Africa,2494530
+,Nepal,NP,,65,,30,,40,,40, ,60, ,40,,,Asia,28608710
+NET,Netherlands,NL,38,,80,,14,,53,,67,,68,,,,Europe,17097130
+NZL,New Zealand,NZ,22,,79,,58,,49,,33, ,75, ,gj,,Oceania,4783063
+,Nicaragua,NI,,80, ,20,,40,,70,,10,,90,gj,,Americas,6545502
+,Niger ,NE,,80,,30,,60,,60,,20, ,50,gj,,Africa,23310715
+NIG,Nigeria,NG, ,80, ,30, ,60, ,55, ,13, ,84,,,Africa,200963599
+NOR,Norway,NO,31,,69,,8,,50,,35,,55,,gj,,Europe,5378857
+,Oman,OM,,90, ,25, ,60, ,80,35,,52,,,,Asia,4974986
+PAK,Pakistan,PK,55,,14,,50,,70,,50,,0,,gj,,Asia,216565318
+ ,Palestine,PS, ,80, ,30, ,45, ,65, ,16, ,40,gj,,Asia,4981420
+PAN,Panama,PA,95,,11,,44,,86,, ,20,,80,gj,,Americas,4246439
+,Papua New Guinea,PG,,40,,50,,70,,60,,30,,50,gj,,Oceania,8776109
+,Paraguay,PY,,61,,36,,38,,100,,26, ,53,,,Americas,7044636
+PER,Peru,PE,64,,16,,42,,87,,25,,46,,,,Americas,32510453
+PHI,Philippines,PH,94,,32,,64,,44,,27,,42,,,,Asia,108116615
+POL,Poland,PL,68,,60,,64,,93,,38,,29,,,,Europe,37887768
+POR,Portugal,PT,63,,27,,31,,104,,28,,33,,gj,,Europe,10226187
+PUE,Puerto Rico,PR, ,70, ,20, ,40, ,50,0,,90,,,,Americas,2933408
+ROM,Romania,RO,90,,30,,42,,90,,52,,20,,,,Europe,19364557
+RUS,Russia,RU,93,,39,,36,,95,,81,,20,,itim,,Europe,145872256
+RWA,Rwanda,RW, ,70, ,25, ,60, ,50,18,,37,,itim,,Africa,12626950
+SAU,Saudi Arabia,SA, ,95, ,25, ,60, ,80,36, ,52, ,itim: gj (lto ivr),,Asia,34268528
+,Senegal,SN,,70,,25,,45,,55,,20, ,66,,,Africa,16296364
+SER,Serbia,RS,86,,25,,43,,92,,52, ,28, ,gj,,Europe,8772235
+,Sierra Leone,SL,,80,,20,,40,,50,,20, ,46,,,Africa,7813215
+SIN,Singapore,SG,74,,20,,48,,8,,72,,46,,,,Asia,5804337
+SLK,Slovakia,SK,104,,52,,110,,51,,77,,28,,,,Europe,5457013
+SLV,Slovenia,SI,71,,27,,19,,88,,49, ,48, ,gj,,Europe,2078654
+,Somalia,SO, ,70, ,25, ,65, ,55, ,10, ,20,itim,,Africa,15442905
+SAF,South Africa Original,, ,49, ,65, ,63, ,49, ,, ,, ,niet gebruiken (white),,
+SAW,South Africa,ZA,49,,65,,63,,49,,34,,63,,,,Africa,58558270
+SPA,Spain,ES,57,,51,,42,,86,,48,50,,30,gj,,Europe,46736776
+,Sri Lanka,LK,,70,,40,,50,,50,,10,,30,gj,,Asia,21323733
+,Sudan,SD, ,80,,40, ,60,,80,,10,,40,gj,,Africa,42813238
+,Sudan South,SS,,80,,20,,50,,70,,20, ,80,gj,,Africa,11062113
+SUR,Suriname,SR,85,,47,,37,,92,, ,30, ,80,,,Americas,581372
+SWE,Sweden,SE,31,,71,,5,,29,,53,,78,,,,Europe,10036379
+SWI,Switzerland,CH,34,,68,,70,,58,,74,,66,, , ,Europe,8591365
+SWF,Switzerland French,,70,,64,,58,,70,, ,, ,, ,niet gebruiken,,
+SWG,Switzerland German,,26,,69,,72,,56,, , ,, , ,niet gebruiken,,
+,Syria,SY,,80,,35,,52,,60,,30, ,20,,,Asia,17070135
+TAI,Taiwan,TW,58,,17,,45,,69,,93, ,49, ,gj,,Asia,23773876
+,Tajikistan,TJ,,90,,20,,40,,90,,65, ,40,itim,,Asia,9321018
+TAN,Tanzania,TZ, ,70, ,25, ,40, ,50,34,,38,,,,Africa,58005463
+THA,Thailand,TH,64,,20,,34,,64,,32, ,45, ,gj,,Asia,69037513
+,Timor-Leste,TL,,78,,14,,46,,48,,60,,40,gj,,Asia,1293119
+,Togo,TG,,80,,15,,40,,65,,15, ,80,,,Africa,8082366
+TRI,Trinidad and Tobago,TT,47,,16,,58,,55,,13, ,80, ,gj,,Americas,1394973
+,Tunisia,TN,,70,,50,,40,,60,,25, ,30,,,Africa,11694719
+TUR,Turkey,TR,66,,37,,45,,85,,46, ,49, ,gj,,Asia,83429615
+,Turkmenistan,TM,,80,,30,,40,,80,,40, ,50,gj,,Asia,5942089
+UGA,Uganda,UG, ,70, ,25, ,60, ,60,24,,52,,gj,,Africa,44269594
+UKR,Ukraine,UA, ,90, ,40, ,40, ,90,86, ,14, ,gj,,Europe,43993638
+,United Arab Emirates,AE,,90,,25,,40,,80,,20, ,60,,,Asia,9770529
+USA,U.S.A.,US,40,,91,,62,,46,,26,,68,,,,Americas,329064917
+URU,Uruguay,UY,61,,36,,38,,100,,26, ,,40,gj,,Americas,3461734
+,Uzbekistan,UZ,,90,,20,,40,,70,,60, ,35,,,Asia,32981716
+VEN,Venezuela,VE,81,,12,,73,,76,,16,,100,,,,Americas,28515829
+VIE,Vietnam,VN,70,,20,,40,,30,,57, ,35, ,gj,,Asia,96462106
+,Western Sahara,EH,,70,,40,,50,,70,,10,,20,gj,,Africa,582463
+,Yemen,YE,,70,,25,,65,,80,,25,,30,itim,,Asia,29161922
+ZAM,Zambia,ZM, ,60, ,35, ,40, ,50,30,,42,,gj,,Africa,17861030
+ZIM,Zimbabwe,ZW, ,70, ,30, ,30, ,50,15,,28,,gj,,Africa,14645468

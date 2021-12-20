@@ -9,6 +9,7 @@ const Container = styled.div`
   // height: 100%;
   box-shadow: 0 0 50px black;
   border-radius: 0 0 40px 0;
+  padding: 3%;
 `;
 
 const variants = {
@@ -31,7 +32,7 @@ const variants = {
 const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
 
 export default function Sidebar(props) {
-  const style = { border: `2px solid ${colors[0]}` };
+  // const style = { border: `2px solid ${colors[0]}` };
 
   return (
     <Container style={props.style}>
@@ -42,7 +43,7 @@ export default function Sidebar(props) {
         Dimensions. What's that?
       </p>
 
-      <Menu />
+      <Menu dimensions={props.dimensions} setDimension={props.setDimension} />
     </Container>
   );
 }
