@@ -7,9 +7,16 @@ const InfoText = styled.p`
   white-space: pre-line;
 `;
 
+const Separator = styled.hr`
+  width: 80%;
+`;
+
 export default function DimensionInfo(props) {
   return (
     <InfoText>
+      <br />
+      <Separator />
+      <br />
       {dimensionInfo[props.dimension]}
     </InfoText>
   );

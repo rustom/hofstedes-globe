@@ -7,17 +7,26 @@ import { theme } from '@styles';
 const Container = styled.div`
   // width: 100%;
   // height: 100%;
+  // margin: 0;
 
   width: 25vw;
+  height: calc(100vh - 80px);
   position: absolute;
+  overflow-y: scroll;
+  scrollbar-width: none;
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
   left: 0px;
   top: 0px;
   background: #0a1930; //theme.colors.background,
 
-  box-shadow: 0 0 50px black;
+  // box-shadow: 0 0 50px black;
   border-radius: 0 0 40px 0;
   padding: 40px;
-  min-width: 300px;
+  min-width: 390px;
 `;
 
 const Title = styled.h1`
@@ -42,7 +51,7 @@ const TitleBoxLeft = styled.div`
 const TitleBoxRight = styled.div`
   position: absolute;
   background: ${theme.colors.accent};
-  left: 400px;
+  right: 25px;
   top: 3.96em;
   height: 3em;
   width: 5em;
