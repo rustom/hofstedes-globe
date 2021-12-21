@@ -25,7 +25,7 @@ const SelectionHighlight = styled(motion.div)`
   top: 100px;
   // right: ;
 
-  box-shadow: 0 0 40px black;
+  box-shadow: 0 0 30px black;
   border-radius: 2em;
   position: absolute;
 

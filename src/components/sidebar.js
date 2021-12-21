@@ -21,10 +21,31 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
+  position: relative;
+  text-align: center;
+  background: ${theme.colors.background};
   font-family: ${theme.fonts.mono};
   line-height: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
+`;
+
+const TitleBoxLeft = styled.div`
+  position: absolute;
+  background: ${theme.colors.accent};
+  left: 28px;
+  top: 2.75em;
+  height: 3em;
+  width: 5em;
+`;
+
+const TitleBoxRight = styled.div`
+  position: absolute;
+  background: ${theme.colors.accent};
+  left: 400px;
+  top: 3.96em;
+  height: 3em;
+  width: 5em;
 `;
 
 const variants = {
@@ -51,7 +72,9 @@ export default function Sidebar(props) {
 
   return (
     <Container>
-      <Title>Hofstede's Globe</Title>
+      <TitleBoxLeft />
+      <TitleBoxRight />
+      <Title >Hofstede's Globe</Title>
 
       <p>
         Hofstede's Globe is a tool for visualizing Hofstede's 6 Cultural
