@@ -17,11 +17,14 @@ const Container = styled.div`
   box-shadow: 0 0 50px black;
   border-radius: 0 0 40px 0;
   padding: 40px;
+  min-width: 300px;
 `;
 
 const Title = styled.h1`
   font-family: ${theme.fonts.mono};
+  line-height: 1.5em;
   font-weight: 500;
+  text-transform: uppercase;
 `;
 
 const variants = {

@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${theme.fonts.sizeDefault};
     line-height: 1.5em;
 
+    p, h1 {
+      mix-blend-mode: difference;
+    }
+
     * {
       font-weight: ${theme.fonts.weightDefault};
     }

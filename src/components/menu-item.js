@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { mixins } from '@styles';
+import { theme } from '@styles';
 
 const variants = {
   open: {
@@ -26,12 +27,14 @@ const DimensionItem = styled(motion.p)`
   // border: none;
   // padding: 0;
   // color: inherit;
-  // font-family: inherit;
   // font-size: inherit;
   all: unset;
+  font-family: ${theme.fonts.mono};
+  text-transform: uppercase;
   display: block;
   margin: 1em;
   mix-blend-mode: difference;
+    
   // position: relative;
 `;
 

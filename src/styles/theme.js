@@ -26,7 +26,7 @@ const theme = {
     text: palette.grey4,
     textLight: palette.grey4,
     accent: palette.peach2,
-    accentLight: palette.peach2,
+    accentLight: palette.peach,
     accentDark: palette.darkPeach,
   },
   fonts: {

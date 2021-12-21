@@ -13,20 +13,17 @@ import { theme } from '@styles';
 //   },
 // };
 
-const variants = {
-  // 'PowerDistance': 
-};
 
 const DimensionSelector = styled(motion.div)`
   background: transparent;
 `;
 
 const SelectionHighlight = styled(motion.div)`
-  background: ${theme.colors.accent};
+  background: ${theme.colors.accentLight};
   height: 3em;
   width: 25em;
   top: 100px;
-  left: -100px;
+  // right: ;
 
   box-shadow: 0 0 40px black;
   border-radius: 2em;
@@ -42,14 +39,21 @@ export default function Menu(props) {
   //   props.setDimension(newDimension);
   // }
 
-  useEffect(() => {
+  function resizeSelector() {
     document.getElementById('selectionHighlight').style.top = 
         'calc(' + document.getElementById(props.dimension.split(" ").join("")).getBoundingClientRect().top + 'px - 0.8em)'
-        return;
+    document.getElementById('selectionHighlight').style.width = '1000px';//document.getElementById('dimensionSelector').getBoundingClientRect().width - 50 + 'px';
+    document.getElementById('selectionHighlight').style.right = '40px';//document.getElementById('dimensionSelector').getBoundingClientRect().right + 'px';
+  }
+
+  window.addEventListener('resize', resizeSelector);
+  
+  useEffect(() => {
+    resizeSelector();
   }, []);
 
   return (
-    <DimensionSelector>
+    <DimensionSelector id='dimensionSelector'>
     <SelectionHighlight id="selectionHighlight" />
     
       {props.dimensions &&
@@ -60,7 +64,6 @@ export default function Menu(props) {
             key={i}
             dimension={dimension}
             setDimension={props.setDimension}
-            // style={{position: 'absolute'}}
             />
             );
           })}
