@@ -7,9 +7,21 @@ import { theme } from '@styles';
 const Container = styled.div`
   // width: 100%;
   // height: 100%;
+
+  width: 25vw;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #0a1930; //theme.colors.background,
+
   box-shadow: 0 0 50px black;
   border-radius: 0 0 40px 0;
-  padding: 3%;
+  padding: 40px;
+`;
+
+const Title = styled.h1`
+  font-family: ${theme.fonts.mono};
+  font-weight: 500;
 `;
 
 const variants = {
@@ -35,15 +47,18 @@ export default function Sidebar(props) {
   // const style = { border: `2px solid ${colors[0]}` };
 
   return (
-    <Container style={props.style}>
-      <h1>Hofstede's Globe</h1>
+    <Container>
+      <Title>Hofstede's Globe</Title>
 
       <p>
         Hofstede's Globe is a tool for visualizing Hofstede's 6 Cultural
-        Dimensions. What's that?
+        Dimensions. 
+      </p>
+      <p>
+        What's that?
       </p>
 
-      <Menu dimensions={props.dimensions} setDimension={props.setDimension} />
+      <Menu dimensions={props.dimensions} dimension={props.dimension} setDimension={props.setDimension} />
     </Container>
   );
 }

@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: ${theme.colors.background};
-    font-family: ${theme.fonts.mono};
+    font-family: ${theme.fonts.sans};
     color: ${theme.colors.text};
     font-size: ${theme.fonts.sizeDefault};
     line-height: 1.5em;
@@ -38,21 +38,21 @@ const GlobalStyle = createGlobalStyle`
       background-color: ${theme.colors.accent};
     }
 
-    a {
-      text-decoration: none;
-      :link {
-        color: ${theme.colors.accent};
-      }
-      :visited {
-        color: ${theme.colors.accent};
-      }
-      :hover {
-        color: ${theme.colors.background};
-      }
-      :active {
-        color: ${theme.colors.background};
-      }
-    }
+    // a {
+    //   text-decoration: none;
+    //   :link {
+    //     color: ${theme.colors.accent};
+    //   }
+    //   :visited {
+    //     color: ${theme.colors.accent};
+    //   }
+    //   :hover {
+    //     color: ${theme.colors.background};
+    //   }
+    //   :active {
+    //     color: ${theme.colors.background};
+    //   }
+    // }
   }
 }
 `;

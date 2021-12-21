@@ -33,11 +33,8 @@ const theme = {
     sans: 'IBM Plex Sans',
     mono: 'IBM Plex Mono',
     extra: 'Montserrat',
-    sizeDefault: '17px',
-    weightDefault: 300,
-  },
-  sizes: {
-    maxWidth: '600px',
+    sizeDefault: '20px',
+    weightDefault: 400,
   },
 };
 
