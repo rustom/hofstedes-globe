@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
-import { Map, Sidebar } from '@components';
+import { ColorKey, Map, Sidebar } from '@components';
 
 const Container = styled.div`
+  position: fixed;   
   width: 100vw;
   height: 100vh;
 `;
@@ -28,6 +29,7 @@ export default function Home() {
         <Container>
           {/* <ChildContainer> */}
           <Map mapWidth={'100%'} dimension={dimension} />
+          <ColorKey />
           {/* <Menu /> */}
           <Sidebar
             dimensions={dimensionList}
