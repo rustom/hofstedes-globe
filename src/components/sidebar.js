@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { Menu } from '@components';
+import { DimensionInfo, Menu } from '@components';
 import { theme } from '@styles';
 
 const Container = styled.div`
@@ -78,13 +78,15 @@ export default function Sidebar(props) {
 
       <p>
         Hofstede's Globe is a tool for visualizing Hofstede's 6 Cultural
-        Dimensions. 
+        Dimensions.
       </p>
       <p>
         What's that?
       </p>
 
       <Menu dimensions={props.dimensions} dimension={props.dimension} setDimension={props.setDimension} />
+
+      <DimensionInfo dimension={props.dimension} />
     </Container>
   );
 }
