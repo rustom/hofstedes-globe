@@ -26,18 +26,15 @@ const theme = {
     text: palette.grey4,
     textLight: palette.grey4,
     accent: palette.peach2,
-    accentLight: palette.peach2,
+    accentLight: palette.peach,
     accentDark: palette.darkPeach,
   },
   fonts: {
     sans: 'IBM Plex Sans',
     mono: 'IBM Plex Mono',
     extra: 'Montserrat',
-    sizeDefault: '17px',
-    weightDefault: 300,
-  },
-  sizes: {
-    maxWidth: '600px',
+    sizeDefault: '20px',
+    weightDefault: 400,
   },
 };
 

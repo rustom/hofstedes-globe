@@ -13,10 +13,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: ${theme.colors.background};
-    font-family: ${theme.fonts.mono};
-    color: ${theme.colors.text};
+    font-family: ${theme.fonts.sans};
+    color: #dddddd;//${theme.colors.text};
     font-size: ${theme.fonts.sizeDefault};
     line-height: 1.5em;
+
+    // p, h1 {
+    //   mix-blend-mode: difference;
+    // }
 
     * {
       font-weight: ${theme.fonts.weightDefault};
@@ -33,26 +37,26 @@ const GlobalStyle = createGlobalStyle`
       height: 0;
     }
 
-    *::selection {
-      color: ${theme.colors.background};
-      background-color: ${theme.colors.accent};
-    }
+    // *::selection {
+    //   color: ${theme.colors.background};
+    //   background-color: ${theme.colors.accent};
+    // }
 
-    a {
-      text-decoration: none;
-      :link {
-        color: ${theme.colors.accent};
-      }
-      :visited {
-        color: ${theme.colors.accent};
-      }
-      :hover {
-        color: ${theme.colors.background};
-      }
-      :active {
-        color: ${theme.colors.background};
-      }
-    }
+    // a {
+    //   text-decoration: none;
+    //   :link {
+    //     color: ${theme.colors.accent};
+    //   }
+    //   :visited {
+    //     color: ${theme.colors.accent};
+    //   }
+    //   :hover {
+    //     color: ${theme.colors.background};
+    //   }
+    //   :active {
+    //     color: ${theme.colors.background};
+    //   }
+    // }
   }
 }
 `;

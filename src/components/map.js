@@ -1,40 +1,49 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 import ReactMapGL, { Source, Layer } from 'react-map-gl';
 import data from '@data/data_new';
+import { motion, useAnimation } from 'framer-motion';
+import chroma from 'chroma-js';
 
 const MAPBOX_TOKEN =
   'pk.eyJ1IjoicnVzdG9tLWljaGhhcG9yaWEiLCJhIjoiY2t4Y3YxNWN6M2RpeDJwbXVpdnlsYWducSJ9.14tOov0CCEUjhs99yMRdbA';
-
-// const MapObject = styled.ReactMapGL`
-//   .mapboxgl-ctrl-logo {
-//     display: none !important;
-//   }
-// `;
 
 export default function Map(props) {
   const [viewport, setViewport] = useState({
     width: props.mapWidth,
     height: window.innerHeight,
-    zoom: 0,
     mapboxApiAccessToken: MAPBOX_TOKEN,
     attributionControl: false,
     logo: false,
+    latitude: 20, 
+    longitude: -50, 
+    zoom: 1.5,
   });
 
   const column = props.dimension;
 
   const matchExpression = ['match', ['get', 'iso_3166_1_alpha_3']];
 
+//   function pickHex(color1, color2, weight) {
+//     var w1 = weight;
+//     var w2 = 1 - w1;
+//     var rgb = [Math.round(color1[0] * w1 + color2[0] * w2),
+//         Math.round(color1[1] * w1 + color2[1] * w2),
+//         Math.round(color1[2] * w1 + color2[2] * w2)];
+//     return rgb;
+// }
+
+  var scale = chroma.scale(['#00b3ff', '#eeeeee', '#ff4c00']).mode('lab');
   for (const row of data) {
     // console.log(row[column]);
-    const intensity =
-      typeof row[column] === 'undefined' || row[column] == null
-        ? 0
-        : row[column];
-    intensity = intensity * 0.4 + 20; //100 - intensity * 0.5;
+    if (row[column] === 'undefined' || row[column] == null) {
+      continue;
+    } // 47e0ff
+    const color = scale(row[column] / 100).hex();
+    console.log(color);
+    // intensity = pickHex();//95 - intensity * 0.4;
     // console.log(intensity);
-    const color = `hsl(17.9, 100%, ${intensity}%)`;
+    // const color = `hsl(17.9, 100%, ${intensity}%)`;
 
     matchExpression.push(row['Country Code'], color);
   }
@@ -43,16 +52,16 @@ export default function Map(props) {
   matchExpression.push('rgba(255, 0, 0, 0)');
 
   const layerProps = {
+    source: 'countries',
+    'source-layer': 'country_boundaries',
+    beforeId: 'admin-0-boundary-bg',
     type: 'fill',
     paint: {
       'fill-color': matchExpression,
+      // 'fill-opacity': 0.8
     },
   };
-
-  // const mapboxStyle = {
-
-  // }
-
+  
   return (
     <ReactMapGL
       {...viewport}
@@ -64,7 +73,8 @@ export default function Map(props) {
         type="vector"
         url="mapbox://mapbox.country-boundaries-v1"
       >
-        <Layer {...layerProps} source-layer="country_boundaries" />
+        <Layer {...layerProps} />
+        {/* <Layer source="countries" source-layer */}
       </Source>
     </ReactMapGL>
   );
