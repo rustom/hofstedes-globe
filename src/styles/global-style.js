@@ -14,13 +14,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     background: ${theme.colors.background};
     font-family: ${theme.fonts.sans};
-    color: ${theme.colors.text};
+    color: #dddddd;//${theme.colors.text};
     font-size: ${theme.fonts.sizeDefault};
     line-height: 1.5em;
 
-    p, h1 {
-      mix-blend-mode: difference;
-    }
+    // p, h1 {
+    //   mix-blend-mode: difference;
+    // }
 
     * {
       font-weight: ${theme.fonts.weightDefault};
@@ -37,10 +37,10 @@ const GlobalStyle = createGlobalStyle`
       height: 0;
     }
 
-    *::selection {
-      color: ${theme.colors.background};
-      background-color: ${theme.colors.accent};
-    }
+    // *::selection {
+    //   color: ${theme.colors.background};
+    //   background-color: ${theme.colors.accent};
+    // }
 
     // a {
     //   text-decoration: none;

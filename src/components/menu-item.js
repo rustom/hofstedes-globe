@@ -33,6 +33,7 @@ const DimensionItem = styled(motion.p)`
   text-transform: uppercase;
   display: block;
   margin: 1em;
+
   mix-blend-mode: difference;
     
   // position: relative;

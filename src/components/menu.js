@@ -19,7 +19,7 @@ const DimensionSelector = styled(motion.div)`
 `;
 
 const SelectionHighlight = styled(motion.div)`
-  background: ${theme.colors.accentLight};
+  background: ${theme.colors.accent};
   height: 3em;
   width: 25em;
   top: 100px;
@@ -30,20 +30,15 @@ const SelectionHighlight = styled(motion.div)`
   position: absolute;
 
   transition: 0.5s;
-  mix-blend-mode: difference;
+  // mix-blend-mode: difference;
 `;
 
 export default function Menu(props) {
-  // const changeDimension = function(newDimension) {
-  //   console.log(newDimension);
-  //   props.setDimension(newDimension);
-  // }
-
   function resizeSelector() {
     document.getElementById('selectionHighlight').style.top = 
         'calc(' + document.getElementById(props.dimension.split(" ").join("")).getBoundingClientRect().top + 'px - 0.8em)'
-    document.getElementById('selectionHighlight').style.width = '1000px';//document.getElementById('dimensionSelector').getBoundingClientRect().width - 50 + 'px';
-    document.getElementById('selectionHighlight').style.right = '40px';//document.getElementById('dimensionSelector').getBoundingClientRect().right + 'px';
+    document.getElementById('selectionHighlight').style.width = '500px';//document.getElementById('dimensionSelector').getBoundingClientRect().width - 50 + 'px';
+    document.getElementById('selectionHighlight').style.left = '-160px';//document.getElementById('dimensionSelector').getBoundingClientRect().right + 'px';
   }
 
   window.addEventListener('resize', resizeSelector);
