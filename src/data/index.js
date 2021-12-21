@@ -1,2 +1,2 @@
-export { default as hofstede } from './hofstede';
-export { default as data } from './data_new';
+export { default as dimensionData } from './dimension-data';
+export { default as dimensionInfo } from './dimension-info';

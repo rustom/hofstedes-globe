@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 import ReactMapGL, { Source, Layer } from 'react-map-gl';
-import data from '@data/data_new';
+import { dimensionData } from '@data';
 import { motion, useAnimation } from 'framer-motion';
 import chroma from 'chroma-js';
 
@@ -24,21 +24,11 @@ export default function Map(props) {
 
   const matchExpression = ['match', ['get', 'iso_3166_1_alpha_3']];
 
-//   function pickHex(color1, color2, weight) {
-//     var w1 = weight;
-//     var w2 = 1 - w1;
-//     var rgb = [Math.round(color1[0] * w1 + color2[0] * w2),
-//         Math.round(color1[1] * w1 + color2[1] * w2),
-//         Math.round(color1[2] * w1 + color2[2] * w2)];
-//     return rgb;
-// }
-
   var scale = chroma.scale(['#00b3ff', '#eeeeee', '#ff4c00']).mode('lab');
-  for (const row of data) {
-    // console.log(row[column]);
+  for (const row of dimensionData) {
     if (row[column] === 'undefined' || row[column] == null) {
       continue;
-    } // 47e0ff
+    } 
     const color = scale(row[column] / 100).hex();
     console.log(color);
     // intensity = pickHex();//95 - intensity * 0.4;

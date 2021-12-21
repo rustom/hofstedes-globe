@@ -1,23 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { Menu } from '@components';
+import { DimensionInfo, Menu } from '@components';
 import { theme } from '@styles';
 
 const Container = styled.div`
   // width: 100%;
   // height: 100%;
+  // margin: 0;
 
   width: 25vw;
+  height: calc(100vh - 80px);
   position: absolute;
+  overflow-y: scroll;
+  scrollbar-width: none;
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
   left: 0px;
   top: 0px;
   background: #0a1930; //theme.colors.background,
 
   box-shadow: 0 0 50px black;
-  border-radius: 0 0 40px 0;
+  // border-radius: 0 0 40px 0;
   padding: 40px;
-  min-width: 300px;
+  min-width: 390px;
 `;
 
 const Title = styled.h1`
@@ -42,28 +51,15 @@ const TitleBoxLeft = styled.div`
 const TitleBoxRight = styled.div`
   position: absolute;
   background: ${theme.colors.accent};
-  left: 400px;
+  right: 25px;
   top: 3.96em;
   height: 3em;
   width: 5em;
 `;
 
-const variants = {
-  open: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      y: { stiffness: 1000, velocity: -100 },
-    },
-  },
-  closed: {
-    y: 50,
-    opacity: 0,
-    transition: {
-      y: { stiffness: 1000 },
-    },
-  },
-};
+const Separator = styled.hr`
+  width: 80%;
+`;
 
 const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
 
@@ -71,20 +67,28 @@ export default function Sidebar(props) {
   // const style = { border: `2px solid ${colors[0]}` };
 
   return (
-    <Container>
+    <Container id="sidebar">
       <TitleBoxLeft />
       <TitleBoxRight />
-      <Title >Hofstede's Globe</Title>
+      <Title>Hofstede's Globe</Title>
 
       <p>
         Hofstede's Globe is a tool for visualizing Hofstede's 6 Cultural
-        Dimensions. 
+        Dimensions.
       </p>
       <p>
         What's that?
       </p>
 
+      <div style={{ fontSize: '15px' }}>
+        <br />
+        <Separator />
+        <br />
+      </div>
+
       <Menu dimensions={props.dimensions} dimension={props.dimension} setDimension={props.setDimension} />
+
+      <DimensionInfo dimension={props.dimension} />
     </Container>
   );
 }
