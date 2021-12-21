@@ -23,8 +23,8 @@ const Container = styled.div`
   top: 0px;
   background: #0a1930; //theme.colors.background,
 
-  // box-shadow: 0 0 50px black;
-  border-radius: 0 0 40px 0;
+  box-shadow: 0 0 50px black;
+  // border-radius: 0 0 40px 0;
   padding: 40px;
   min-width: 390px;
 `;
@@ -57,22 +57,9 @@ const TitleBoxRight = styled.div`
   width: 5em;
 `;
 
-const variants = {
-  open: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      y: { stiffness: 1000, velocity: -100 },
-    },
-  },
-  closed: {
-    y: 50,
-    opacity: 0,
-    transition: {
-      y: { stiffness: 1000 },
-    },
-  },
-};
+const Separator = styled.hr`
+  width: 80%;
+`;
 
 const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
 
@@ -80,10 +67,10 @@ export default function Sidebar(props) {
   // const style = { border: `2px solid ${colors[0]}` };
 
   return (
-    <Container>
+    <Container id="sidebar">
       <TitleBoxLeft />
       <TitleBoxRight />
-      <Title >Hofstede's Globe</Title>
+      <Title>Hofstede's Globe</Title>
 
       <p>
         Hofstede's Globe is a tool for visualizing Hofstede's 6 Cultural
@@ -92,6 +79,12 @@ export default function Sidebar(props) {
       <p>
         What's that?
       </p>
+
+      <div style={{ fontSize: '15px' }}>
+        <br />
+        <Separator />
+        <br />
+      </div>
 
       <Menu dimensions={props.dimensions} dimension={props.dimension} setDimension={props.setDimension} />
 

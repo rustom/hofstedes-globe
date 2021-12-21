@@ -13,11 +13,13 @@ const Separator = styled.hr`
 
 export default function DimensionInfo(props) {
   return (
-    <InfoText>
-      <br />
-      <Separator />
-      <br />
-      {dimensionInfo[props.dimension]}
-    </InfoText>
+    <div style={{ height: '28em' }}>
+      <InfoText>
+        <br />
+        <Separator />
+        <br />
+        {dimensionInfo[props.dimension]}
+      </InfoText>
+    </div >
   );
 }
