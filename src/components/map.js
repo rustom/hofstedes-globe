@@ -15,8 +15,8 @@ export default function Map(props) {
     mapboxApiAccessToken: MAPBOX_TOKEN,
     attributionControl: false,
     logo: false,
-    latitude: 20, 
-    longitude: -50, 
+    latitude: 20,
+    longitude: -50,
     zoom: 1.5,
   });
 
@@ -28,9 +28,8 @@ export default function Map(props) {
   for (const row of dimensionData) {
     if (row[column] === 'undefined' || row[column] == null) {
       continue;
-    } 
+    }
     const color = scale(row[column] / 100).hex();
-    console.log(color);
     // intensity = pickHex();//95 - intensity * 0.4;
     // console.log(intensity);
     // const color = `hsl(17.9, 100%, ${intensity}%)`;
@@ -51,7 +50,7 @@ export default function Map(props) {
       // 'fill-opacity': 0.8
     },
   };
-  
+
   return (
     <ReactMapGL
       {...viewport}

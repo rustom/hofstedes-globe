@@ -21,7 +21,7 @@ const Container = styled.div`
     }
   left: 0px;
   top: 0px;
-  background: #0a1930; //theme.colors.background,
+  background: ${theme.colors.background};
 
   box-shadow: 0 0 50px black;
   // border-radius: 0 0 40px 0;
@@ -72,11 +72,11 @@ export default function Sidebar(props) {
       <TitleBoxRight />
       <Title>Hofstede's Globe</Title>
 
-      <p>
+      <p style={{ paddingTop: '5%' }}>
         Hofstede's Globe is a tool for visualizing Hofstede's 6 Cultural
         Dimensions.
       </p>
-      <p>
+      <p style={{ marginBottom: '0px' }}>
         What's that?
       </p>
 
