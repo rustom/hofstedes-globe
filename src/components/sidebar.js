@@ -73,7 +73,7 @@ export default function Sidebar(props) {
       <Title>Hofstede's Globe</Title>
 
       <p style={{ paddingTop: '5%' }}>
-        Hofstede's Globe is a tool for visualizing Hofstede's 6 Cultural
+        Hofstede's Globe is a tool for visualizing Geert Hofstede's 6 Cultural
         Dimensions.
       </p>
       <p style={{ marginBottom: '0px' }}>
