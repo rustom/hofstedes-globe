@@ -3,14 +3,15 @@ import styled from 'styled-components';
 import { theme } from '@styles';
 
 const Container = styled.div`
-  position: fixed; 
+  position: fixed;
   right: 10%;
   bottom: 10%;
   background: ${theme.colors.background};
   width: 15%;
   height: 10%;
   border-radius: 30px;
-  box-shadow: 0 0 30px black;
+  // border: solid;
+  box-shadow: 0 0 20px #999999; //${theme.colors.text};
 `;
 
 const Colors = styled.div`
@@ -39,9 +40,7 @@ export default function ColorKey() {
   return (
     <Container>
       <Colors></Colors>
-      <KeyText>
-        0 50 100
-      </KeyText>
+      <KeyText>0 50 100</KeyText>
     </Container>
   );
 }
