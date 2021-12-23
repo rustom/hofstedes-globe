@@ -1,17 +1,8 @@
-import React, { componentDidMount, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { MenuItem } from '@components';
 import { theme } from '@styles';
-
-// const variants = {
-//   open: {
-//     transition: { staggerChildren: 0.07, delayChildren: 0.2 },
-//   },
-//   closed: {
-//     transition: { staggerChildren: 0.05, staggerDirection: -1 },
-//   },
-// };
 
 const DimensionSelector = styled(motion.div)`
   background: transparent;
@@ -31,12 +22,6 @@ const SelectionHighlight = styled(motion.div)`
   transition: 0.5s;
   // mix-blend-mode: difference;
 `;
-
-const item = {
-  beginning: { opacity: 0, y: 20 },
-  final: { opacity: 1, y: 0 },
-  exit: { opacity: 0 },
-};
 
 export default function Menu(props) {
   function resizeSelector() {
@@ -58,7 +43,7 @@ export default function Menu(props) {
 
   useEffect(() => {
     resizeSelector();
-  }, []);
+  });
 
   return (
     <DimensionSelector id="dimensionSelector">

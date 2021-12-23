@@ -1,7 +1,6 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import styled, { css } from 'styled-components';
+import React, { useCallback, useMemo, useState } from 'react';
+import styled from 'styled-components';
 import ReactMapGL, { Source, Layer } from 'react-map-gl';
-import { motion, useAnimation } from 'framer-motion';
 import chroma from 'chroma-js';
 import { theme } from '@styles';
 import { dimensionData } from '@data';
@@ -89,10 +88,10 @@ export default function Map(props) {
     setHoverInfo(
       hoveredFeature
         ? {
-            feature: hoveredFeature,
-            x: offsetX,
-            y: offsetY,
-          }
+          feature: hoveredFeature,
+          x: offsetX,
+          y: offsetY,
+        }
         : null
     );
   }, []);
@@ -118,12 +117,12 @@ export default function Map(props) {
           {hoverInfo.feature.properties.name_en}:{' '}
           {dimensionData[hoverInfo.feature.properties.iso_3166_1_alpha_3]
             ? dimensionData[hoverInfo.feature.properties.iso_3166_1_alpha_3][
-                props.dimension
-              ] > 100
+              props.dimension
+            ] > 100
               ? 100
               : dimensionData[hoverInfo.feature.properties.iso_3166_1_alpha_3][
-                  props.dimension
-                ]
+              props.dimension
+              ]
             : 'Unstudied'}
         </HoverInfoContainer>
       )}
