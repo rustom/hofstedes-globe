@@ -42,21 +42,22 @@ const GlobalStyle = createGlobalStyle`
     //   background-color: ${theme.colors.accent};
     // }
 
-    // a {
-    //   text-decoration: none;
-    //   :link {
-    //     color: ${theme.colors.accent};
-    //   }
-    //   :visited {
-    //     color: ${theme.colors.accent};
-    //   }
-    //   :hover {
-    //     color: ${theme.colors.background};
-    //   }
-    //   :active {
-    //     color: ${theme.colors.background};
-    //   }
-    // }
+    a {
+      text-decoration: none;
+      color: ${theme.colors.accent};
+
+      // :link {
+      // }
+      // :visited {
+      //   color: ${theme.colors.accent};
+      // }
+      // :hover {
+      //   color: ${theme.colors.accent};
+      // }
+      // :active {
+      //   color: ${theme.colors.background};
+      // }
+    }
   }
 }
 `;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
-import { ColorKey, Map, Sidebar } from '@components';
+import { ColorKey, Map, MoreInfo, Sidebar } from '@components';
 
 const Container = styled.div`
   position: fixed;
@@ -20,6 +20,7 @@ const dimensionList = [
 
 export default function Home() {
   const [dimension, setDimension] = useState('Power Distance');
+  const [moreInfo, setMoreInfo] = useState(false);
 
   return (
     <>
@@ -34,7 +35,10 @@ export default function Home() {
             dimensions={dimensionList}
             dimension={dimension}
             setDimension={setDimension}
+            moreInfo={moreInfo}
+            setMoreInfo={setMoreInfo}
           />
+          {moreInfo && <MoreInfo />}
           {/* </ChildContainer> */}
           {/* <ChildContainer style={{position: 'absolute'}}> */}
           {/* </ChildContainer> */}

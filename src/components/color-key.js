@@ -10,7 +10,8 @@ const Container = styled.div`
   width: 15%;
   height: 10%;
   border-radius: 30px;
-  box-shadow: 0 0 30px black;
+  // border: solid;
+  box-shadow: 0 0 20px #999999; //${theme.colors.text};
 `;
 
 const Colors = styled.div`

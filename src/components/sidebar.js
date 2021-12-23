@@ -23,10 +23,11 @@ const Container = styled.div`
   top: 0px;
   background: ${theme.colors.background};
 
-  box-shadow: 0 0 50px black;
-  // border-radius: 0 0 40px 0;
+  box-shadow: 0 0 30px #999999;
   padding: 40px;
   min-width: 390px;
+  // transform: translate(2vw, 3vh);
+  // transition-delay: 1s;
 `;
 
 const Title = styled.h1`
@@ -61,11 +62,20 @@ const Separator = styled.hr`
   width: 80%;
 `;
 
+const MoreInfoButton = styled.button`
+  // margin: 0px;
+  // background: none;
+  // border: none;
+  // font-family: inherit;
+  // color: inherit;
+  // font-size: inherit;
+  all: unset;
+  text-decoration: underline;
+`;
+
 const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
 
 export default function Sidebar(props) {
-  // const style = { border: `2px solid ${colors[0]}` };
-
   return (
     <Container id="sidebar">
       <TitleBoxLeft />
@@ -76,7 +86,13 @@ export default function Sidebar(props) {
         Hofstede's Globe is a tool for visualizing Geert Hofstede's 6 Cultural
         Dimensions.
       </p>
-      <p style={{ marginBottom: '0px' }}>What's that?</p>
+      <MoreInfoButton
+        onClick={() => {
+          props.setMoreInfo(!props.moreInfo);
+        }}
+      >
+        What's that?
+      </MoreInfoButton>
 
       <div style={{ fontSize: '15px' }}>
         <br />

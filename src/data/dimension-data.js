@@ -1,2056 +1,1885 @@
-const data = [
-    {
-        "Country Code": "AFG",
-        "Country Name": "Afghanistan",
+const data = {
+    "AFG": {
         "Continent": "Asia",
+        "Country Name": "Afghanistan",
+        "Individualism": 14,
+        "Indulgence": 10,
+        "Long Term Orientation": 30,
+        "Masculinity": 60,
         "Population": 38041754,
         "Power Distance": 55,
-        "Individualism": 14,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 30,
-        "Indulgence": 10
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "ALB",
-        "Country Name": "Albania",
+    "ALB": {
         "Continent": "Europe",
+        "Country Name": "Albania",
+        "Individualism": 20,
+        "Indulgence": 15,
+        "Long Term Orientation": 61,
+        "Masculinity": 80,
         "Population": 2880917,
         "Power Distance": 90,
-        "Individualism": 20,
-        "Masculinity": 80,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 61,
-        "Indulgence": 15
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "DZA",
-        "Country Name": "Algeria",
+    "DZA": {
         "Continent": "Africa",
+        "Country Name": "Algeria",
+        "Individualism": 50,
+        "Indulgence": 32,
+        "Long Term Orientation": 26,
+        "Masculinity": 50,
         "Population": 43053054,
         "Power Distance": 70,
-        "Individualism": 50,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 26,
-        "Indulgence": 32
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "AND",
-        "Country Name": "Andorra",
+    "AND": {
         "Continent": "Europe",
+        "Country Name": "Andorra",
+        "Individualism": 50,
+        "Indulgence": 65,
+        "Long Term Orientation": 50,
+        "Masculinity": 40,
         "Population": 77142,
         "Power Distance": 50,
-        "Individualism": 50,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 50,
-        "Indulgence": 65
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "AGO",
-        "Country Name": "Angola",
+    "AGO": {
         "Continent": "Africa",
+        "Country Name": "Angola",
+        "Individualism": 18,
+        "Indulgence": 83,
+        "Long Term Orientation": 15,
+        "Masculinity": 20,
         "Population": 31825295,
         "Power Distance": 83,
-        "Individualism": 18,
-        "Masculinity": 20,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 15,
-        "Indulgence": 83
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "ARG",
-        "Country Name": "Argentina",
+    "ARG": {
         "Continent": "Americas",
+        "Country Name": "Argentina",
+        "Individualism": 46,
+        "Indulgence": 62,
+        "Long Term Orientation": 20,
+        "Masculinity": 56,
         "Population": 44780677,
         "Power Distance": 49,
-        "Individualism": 46,
-        "Masculinity": 56,
-        "Uncertainty Avoidance": 86,
-        "Long Term Orientation": 20,
-        "Indulgence": 62
+        "Uncertainty Avoidance": 86
     },
-    {
-        "Country Code": "ARM",
-        "Country Name": "Armenia",
+    "ARM": {
         "Continent": "Asia",
+        "Country Name": "Armenia",
+        "Individualism": 40,
+        "Indulgence": 30,
+        "Long Term Orientation": 61,
+        "Masculinity": 40,
         "Population": 2957731,
         "Power Distance": 60,
-        "Individualism": 40,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 61,
-        "Indulgence": 30
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "AUS",
-        "Country Name": "Australia",
+    "AUS": {
         "Continent": "Oceania",
+        "Country Name": "Australia",
+        "Individualism": 90,
+        "Indulgence": 71,
+        "Long Term Orientation": 21,
+        "Masculinity": 61,
         "Population": 25203198,
         "Power Distance": 38,
-        "Individualism": 90,
-        "Masculinity": 61,
-        "Uncertainty Avoidance": 51,
-        "Long Term Orientation": 21,
-        "Indulgence": 71
+        "Uncertainty Avoidance": 51
     },
-    {
-        "Country Code": "AUT",
-        "Country Name": "Austria",
+    "AUT": {
         "Continent": "Europe",
+        "Country Name": "Austria",
+        "Individualism": 55,
+        "Indulgence": 63,
+        "Long Term Orientation": 60,
+        "Masculinity": 79,
         "Population": 8955102,
         "Power Distance": 11,
-        "Individualism": 55,
-        "Masculinity": 79,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 60,
-        "Indulgence": 63
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "AZE",
-        "Country Name": "Azerbaijan",
+    "AZE": {
         "Continent": "Asia",
+        "Country Name": "Azerbaijan",
+        "Individualism": 40,
+        "Indulgence": 22,
+        "Long Term Orientation": 61,
+        "Masculinity": 40,
         "Population": 10047718,
         "Power Distance": 60,
-        "Individualism": 40,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 61,
-        "Indulgence": 22
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "BGD",
-        "Country Name": "Bangladesh",
+    "BGD": {
         "Continent": "Asia",
+        "Country Name": "Bangladesh",
+        "Individualism": 20,
+        "Indulgence": 20,
+        "Long Term Orientation": 47,
+        "Masculinity": 55,
         "Population": 163046161,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 55,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 47,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "BLR",
-        "Country Name": "Belarus",
+    "BLR": {
         "Continent": "Europe",
+        "Country Name": "Belarus",
+        "Individualism": 40,
+        "Indulgence": 15,
+        "Long Term Orientation": 81,
+        "Masculinity": 30,
         "Population": 9452411,
         "Power Distance": 90,
-        "Individualism": 40,
-        "Masculinity": 30,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 81,
-        "Indulgence": 15
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "BEL",
-        "Country Name": "Belgium",
+    "BEL": {
         "Continent": "Europe",
+        "Country Name": "Belgium",
+        "Individualism": 75,
+        "Indulgence": 57,
+        "Long Term Orientation": 82,
+        "Masculinity": 54,
         "Population": 11539328,
         "Power Distance": 65,
-        "Individualism": 75,
-        "Masculinity": 54,
-        "Uncertainty Avoidance": 94,
-        "Long Term Orientation": 82,
-        "Indulgence": 57
+        "Uncertainty Avoidance": 94
     },
-    {
-        "Country Code": "BEN",
-        "Country Name": "Benin",
+    "BEN": {
         "Continent": "Africa",
+        "Country Name": "Benin",
+        "Individualism": 15,
+        "Indulgence": 80,
+        "Long Term Orientation": 5,
+        "Masculinity": 40,
         "Population": 11801151,
         "Power Distance": 80,
-        "Individualism": 15,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 65,
-        "Long Term Orientation": 5,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 65
     },
-    {
-        "Country Code": "BTN",
-        "Country Name": "Bhutan",
+    "BTN": {
         "Continent": "Asia",
+        "Country Name": "Bhutan",
+        "Individualism": 52,
+        "Indulgence": 25,
+        "Long Term Orientation": 60,
+        "Masculinity": 32,
         "Population": 763092,
         "Power Distance": 94,
-        "Individualism": 52,
-        "Masculinity": 32,
-        "Uncertainty Avoidance": 28,
-        "Long Term Orientation": 60,
-        "Indulgence": 25
+        "Uncertainty Avoidance": 28
     },
-    {
-        "Country Code": "BOL",
-        "Country Name": "Bolivia",
+    "BOL": {
         "Continent": "Americas",
+        "Country Name": "Bolivia",
+        "Individualism": 8,
+        "Indulgence": 50,
+        "Long Term Orientation": 25,
+        "Masculinity": 63,
         "Population": 11513100,
         "Power Distance": 78,
-        "Individualism": 8,
-        "Masculinity": 63,
-        "Uncertainty Avoidance": 67,
-        "Long Term Orientation": 25,
-        "Indulgence": 50
+        "Uncertainty Avoidance": 67
     },
-    {
-        "Country Code": "BIH",
-        "Country Name": "Bosnia",
+    "BIH": {
         "Continent": "Europe",
+        "Country Name": "Bosnia",
+        "Individualism": 30,
+        "Indulgence": 44,
+        "Long Term Orientation": 70,
+        "Masculinity": 40,
         "Population": 3301000,
         "Power Distance": 80,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 70,
-        "Indulgence": 44
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "BWA",
-        "Country Name": "Botswana",
+    "BWA": {
         "Continent": "Africa",
+        "Country Name": "Botswana",
+        "Individualism": 40,
+        "Indulgence": 40,
+        "Long Term Orientation": 40,
+        "Masculinity": 30,
         "Population": 2303697,
         "Power Distance": 60,
-        "Individualism": 40,
-        "Masculinity": 30,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 40,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "BRA",
-        "Country Name": "Brazil",
+    "BRA": {
         "Continent": "Americas",
+        "Country Name": "Brazil",
+        "Individualism": 38,
+        "Indulgence": 59,
+        "Long Term Orientation": 44,
+        "Masculinity": 49,
         "Population": 211049527,
         "Power Distance": 69,
-        "Individualism": 38,
-        "Masculinity": 49,
-        "Uncertainty Avoidance": 76,
-        "Long Term Orientation": 44,
-        "Indulgence": 59
+        "Uncertainty Avoidance": 76
     },
-    {
-        "Country Code": "BRN",
-        "Country Name": "Brunei",
+    "BRN": {
         "Continent": "Asia",
+        "Country Name": "Brunei",
+        "Individualism": 26,
+        "Indulgence": 57,
+        "Long Term Orientation": 41,
+        "Masculinity": 50,
         "Population": 433285,
         "Power Distance": 104,
-        "Individualism": 26,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 36,
-        "Long Term Orientation": 41,
-        "Indulgence": 57
+        "Uncertainty Avoidance": 36
     },
-    {
-        "Country Code": "BGR",
-        "Country Name": "Bulgaria",
+    "BGR": {
         "Continent": "Europe",
+        "Country Name": "Bulgaria",
+        "Individualism": 30,
+        "Indulgence": 16,
+        "Long Term Orientation": 69,
+        "Masculinity": 40,
         "Population": 7000119,
         "Power Distance": 70,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 85,
-        "Long Term Orientation": 69,
-        "Indulgence": 16
+        "Uncertainty Avoidance": 85
     },
-    {
-        "Country Code": "BFA",
-        "Country Name": "Burkina Faso",
+    "BFA": {
         "Continent": "Africa",
+        "Country Name": "Burkina Faso",
+        "Individualism": 15,
+        "Indulgence": 18,
+        "Long Term Orientation": 27,
+        "Masculinity": 50,
         "Population": 20321378,
         "Power Distance": 70,
-        "Individualism": 15,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 27,
-        "Indulgence": 18
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "BDI",
-        "Country Name": "Burundi",
+    "BDI": {
         "Continent": "Africa",
+        "Country Name": "Burundi",
+        "Individualism": 25,
+        "Indulgence": 37,
+        "Long Term Orientation": 18,
+        "Masculinity": 60,
         "Population": 10864245,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 18,
-        "Indulgence": 37
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "KHM",
-        "Country Name": "Cambodia",
+    "KHM": {
         "Continent": "Asia",
+        "Country Name": "Cambodia",
+        "Individualism": 20,
+        "Indulgence": 30,
+        "Long Term Orientation": 50,
+        "Masculinity": 50,
         "Population": 16486542,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 50,
-        "Indulgence": 30
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "CMR",
-        "Country Name": "Cameroon",
+    "CMR": {
         "Continent": "Africa",
+        "Country Name": "Cameroon",
+        "Individualism": 10,
+        "Indulgence": 80,
+        "Long Term Orientation": 10,
+        "Masculinity": 50,
         "Population": 25876380,
         "Power Distance": 80,
-        "Individualism": 10,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 10,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "CAN",
-        "Country Name": "Canada",
+    "CAN": {
         "Continent": "Americas",
+        "Country Name": "Canada",
+        "Individualism": 80,
+        "Indulgence": 68,
+        "Long Term Orientation": 36,
+        "Masculinity": 52,
         "Population": 37411047,
         "Power Distance": 39,
-        "Individualism": 80,
-        "Masculinity": 52,
-        "Uncertainty Avoidance": 48,
-        "Long Term Orientation": 36,
-        "Indulgence": 68
+        "Uncertainty Avoidance": 48
     },
-    {
-        "Country Code": "CPV",
-        "Country Name": "Cape Verde",
+    "CPV": {
         "Continent": "Africa",
+        "Country Name": "Cape Verde",
+        "Individualism": 20,
+        "Indulgence": 83,
+        "Long Term Orientation": 12,
+        "Masculinity": 15,
         "Population": 549935,
         "Power Distance": 75,
-        "Individualism": 20,
-        "Masculinity": 15,
-        "Uncertainty Avoidance": 40,
-        "Long Term Orientation": 12,
-        "Indulgence": 83
+        "Uncertainty Avoidance": 40
     },
-    {
-        "Country Code": "CAF",
-        "Country Name": "Central African Republic",
+    "CAF": {
         "Continent": "Africa",
+        "Country Name": "Central African Republic",
+        "Individualism": 20,
+        "Indulgence": 20,
+        "Long Term Orientation": 10,
+        "Masculinity": 60,
         "Population": 4745185,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 10,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "TCD",
-        "Country Name": "Chad",
+    "TCD": {
         "Continent": "Africa",
+        "Country Name": "Chad",
+        "Individualism": 20,
+        "Indulgence": 20,
+        "Long Term Orientation": 10,
+        "Masculinity": 60,
         "Population": 15946876,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 10,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "CHL",
-        "Country Name": "Chile",
+    "CHL": {
         "Continent": "Americas",
+        "Country Name": "Chile",
+        "Individualism": 23,
+        "Indulgence": 68,
+        "Long Term Orientation": 31,
+        "Masculinity": 28,
         "Population": 18952038,
         "Power Distance": 63,
-        "Individualism": 23,
-        "Masculinity": 28,
-        "Uncertainty Avoidance": 86,
-        "Long Term Orientation": 31,
-        "Indulgence": 68
+        "Uncertainty Avoidance": 86
     },
-    {
-        "Country Code": "CHN",
-        "Country Name": "China",
+    "CHN": {
         "Continent": "Asia",
+        "Country Name": "China",
+        "Individualism": 20,
+        "Indulgence": 24,
+        "Long Term Orientation": 87,
+        "Masculinity": 66,
         "Population": 1433783686,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 66,
-        "Uncertainty Avoidance": 30,
-        "Long Term Orientation": 87,
-        "Indulgence": 24
+        "Uncertainty Avoidance": 30
     },
-    {
-        "Country Code": "COL",
-        "Country Name": "Colombia",
+    "COL": {
         "Continent": "Americas",
+        "Country Name": "Colombia",
+        "Individualism": 13,
+        "Indulgence": 83,
+        "Long Term Orientation": 13,
+        "Masculinity": 64,
         "Population": 50339443,
         "Power Distance": 67,
-        "Individualism": 13,
-        "Masculinity": 64,
-        "Uncertainty Avoidance": 80,
-        "Long Term Orientation": 13,
-        "Indulgence": 83
+        "Uncertainty Avoidance": 80
     },
-    {
-        "Country Code": "COG",
-        "Country Name": "Congo",
+    "COG": {
         "Continent": "Africa",
+        "Country Name": "Congo",
+        "Individualism": 20,
+        "Indulgence": 80,
+        "Long Term Orientation": 10,
+        "Masculinity": 60,
         "Population": 5380508,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 10,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "COD",
-        "Country Name": "Democratic Republic of the Congo",
+    "COD": {
         "Continent": "Africa",
+        "Country Name": "Democratic Republic of the Congo",
+        "Individualism": 20,
+        "Indulgence": 80,
+        "Long Term Orientation": 10,
+        "Masculinity": 60,
         "Population": 86790567,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 10,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "CRI",
-        "Country Name": "Costa Rica",
+    "CRI": {
         "Continent": "Americas",
+        "Country Name": "Costa Rica",
+        "Individualism": 15,
+        "Indulgence": 90,
+        "Long Term Orientation": 30,
+        "Masculinity": 21,
         "Population": 5047561,
         "Power Distance": 35,
-        "Individualism": 15,
-        "Masculinity": 21,
-        "Uncertainty Avoidance": 86,
-        "Long Term Orientation": 30,
-        "Indulgence": 90
+        "Uncertainty Avoidance": 86
     },
-    {
-        "Country Code": "CIV",
-        "Country Name": "Cote d'Ivoire",
+    "CIV": {
         "Continent": "Africa",
+        "Country Name": "Cote d'Ivoire",
+        "Individualism": 20,
+        "Indulgence": 40,
+        "Long Term Orientation": 20,
+        "Masculinity": 40,
         "Population": 25716544,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 20,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "HRV",
-        "Country Name": "Croatia",
+    "HRV": {
         "Continent": "Europe",
+        "Country Name": "Croatia",
+        "Individualism": 33,
+        "Indulgence": 33,
+        "Long Term Orientation": 58,
+        "Masculinity": 40,
         "Population": 4130304,
         "Power Distance": 73,
-        "Individualism": 33,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 80,
-        "Long Term Orientation": 58,
-        "Indulgence": 33
+        "Uncertainty Avoidance": 80
     },
-    {
-        "Country Code": "CUB",
-        "Country Name": "Cuba",
+    "CUB": {
         "Continent": "Americas",
+        "Country Name": "Cuba",
+        "Individualism": 20,
+        "Indulgence": 80,
+        "Long Term Orientation": 20,
+        "Masculinity": 40,
         "Population": 11333483,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 20,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "CYP",
-        "Country Name": "Cyprus",
+    "CYP": {
         "Continent": "Asia",
+        "Country Name": "Cyprus",
+        "Individualism": 30,
+        "Indulgence": 70,
+        "Long Term Orientation": 45,
+        "Masculinity": 40,
         "Population": 1179551,
         "Power Distance": 60,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 45,
-        "Indulgence": 70
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "CZE",
-        "Country Name": "Czech Republic",
+    "CZE": {
         "Continent": "Europe",
+        "Country Name": "Czech Republic",
+        "Individualism": 58,
+        "Indulgence": 29,
+        "Long Term Orientation": 70,
+        "Masculinity": 57,
         "Population": 10689209,
         "Power Distance": 57,
-        "Individualism": 58,
-        "Masculinity": 57,
-        "Uncertainty Avoidance": 74,
-        "Long Term Orientation": 70,
-        "Indulgence": 29
+        "Uncertainty Avoidance": 74
     },
-    {
-        "Country Code": "DNK",
-        "Country Name": "Denmark",
+    "DNK": {
         "Continent": "Europe",
+        "Country Name": "Denmark",
+        "Individualism": 74,
+        "Indulgence": 70,
+        "Long Term Orientation": 35,
+        "Masculinity": 16,
         "Population": 5771876,
         "Power Distance": 18,
-        "Individualism": 74,
-        "Masculinity": 16,
-        "Uncertainty Avoidance": 23,
-        "Long Term Orientation": 35,
-        "Indulgence": 70
+        "Uncertainty Avoidance": 23
     },
-    {
-        "Country Code": "DJI",
-        "Country Name": "Djibouti",
+    "DJI": {
         "Continent": "Africa",
+        "Country Name": "Djibouti",
+        "Individualism": 20,
+        "Indulgence": 20,
+        "Long Term Orientation": 10,
+        "Masculinity": 65,
         "Population": 973560,
         "Power Distance": 70,
-        "Individualism": 20,
-        "Masculinity": 65,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 10,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "DOM",
-        "Country Name": "Dominican Republic",
+    "DOM": {
         "Continent": "Americas",
+        "Country Name": "Dominican Republic",
+        "Individualism": 20,
+        "Indulgence": 54,
+        "Long Term Orientation": 13,
+        "Masculinity": 40,
         "Population": 10738958,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 13,
-        "Indulgence": 54
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "ECU",
-        "Country Name": "Ecuador",
+    "ECU": {
         "Continent": "Americas",
+        "Country Name": "Ecuador",
+        "Individualism": 8,
+        "Indulgence": 70,
+        "Long Term Orientation": 25,
+        "Masculinity": 63,
         "Population": 17373662,
         "Power Distance": 78,
-        "Individualism": 8,
-        "Masculinity": 63,
-        "Uncertainty Avoidance": 67,
-        "Long Term Orientation": 25,
-        "Indulgence": 70
+        "Uncertainty Avoidance": 67
     },
-    {
-        "Country Code": "GNQ",
-        "Country Name": "Equatorial Guinea",
+    "GNQ": {
         "Continent": "Africa",
+        "Country Name": "Equatorial Guinea",
+        "Individualism": 20,
+        "Indulgence": 80,
+        "Long Term Orientation": 10,
+        "Masculinity": 60,
         "Population": 1355986,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 10,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "EGY",
-        "Country Name": "Egypt",
+    "EGY": {
         "Continent": "Africa",
+        "Country Name": "Egypt",
+        "Individualism": 25,
+        "Indulgence": 4,
+        "Long Term Orientation": 7,
+        "Masculinity": 45,
         "Population": 100388073,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 80,
-        "Long Term Orientation": 7,
-        "Indulgence": 4
+        "Uncertainty Avoidance": 80
     },
-    {
-        "Country Code": "SLV",
-        "Country Name": "El Salvador",
+    "SLV": {
         "Continent": "Americas",
+        "Country Name": "El Salvador",
+        "Individualism": 19,
+        "Indulgence": 89,
+        "Long Term Orientation": 20,
+        "Masculinity": 40,
         "Population": 6453553,
         "Power Distance": 66,
-        "Individualism": 19,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 94,
-        "Long Term Orientation": 20,
-        "Indulgence": 89
+        "Uncertainty Avoidance": 94
     },
-    {
-        "Country Code": "ERI",
-        "Country Name": "Eritrea",
+    "ERI": {
         "Continent": "Africa",
+        "Country Name": "Eritrea",
+        "Individualism": 25,
+        "Indulgence": 20,
+        "Long Term Orientation": 10,
+        "Masculinity": 65,
         "Population": 3497117,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 65,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 10,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "EST",
-        "Country Name": "Estonia",
+    "EST": {
         "Continent": "Europe",
+        "Country Name": "Estonia",
+        "Individualism": 60,
+        "Indulgence": 16,
+        "Long Term Orientation": 82,
+        "Masculinity": 30,
         "Population": 1325648,
         "Power Distance": 40,
-        "Individualism": 60,
-        "Masculinity": 30,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 82,
-        "Indulgence": 16
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "SWZ",
-        "Country Name": "Eswatini",
+    "SWZ": {
         "Continent": "Africa",
+        "Country Name": "Eswatini",
+        "Individualism": 30,
+        "Indulgence": 70,
+        "Long Term Orientation": 15,
+        "Masculinity": 40,
         "Population": 1148130,
         "Power Distance": 70,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 15,
-        "Indulgence": 70
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "ETH",
-        "Country Name": "Ethiopia",
+    "ETH": {
         "Continent": "Africa",
+        "Country Name": "Ethiopia",
+        "Individualism": 20,
+        "Indulgence": 20,
+        "Long Term Orientation": 10,
+        "Masculinity": 65,
         "Population": 112078730,
         "Power Distance": 70,
-        "Individualism": 20,
-        "Masculinity": 65,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 10,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "FJI",
-        "Country Name": "Fiji",
+    "FJI": {
         "Continent": "Oceania",
+        "Country Name": "Fiji",
+        "Individualism": 14,
+        "Indulgence": 50,
+        "Long Term Orientation": 50,
+        "Masculinity": 46,
         "Population": 889953,
         "Power Distance": 78,
-        "Individualism": 14,
-        "Masculinity": 46,
-        "Uncertainty Avoidance": 48,
-        "Long Term Orientation": 50,
-        "Indulgence": 50
+        "Uncertainty Avoidance": 48
     },
-    {
-        "Country Code": "FIN",
-        "Country Name": "Finland",
+    "FIN": {
         "Continent": "Europe",
+        "Country Name": "Finland",
+        "Individualism": 63,
+        "Indulgence": 57,
+        "Long Term Orientation": 38,
+        "Masculinity": 26,
         "Population": 5532156,
         "Power Distance": 33,
-        "Individualism": 63,
-        "Masculinity": 26,
-        "Uncertainty Avoidance": 59,
-        "Long Term Orientation": 38,
-        "Indulgence": 57
+        "Uncertainty Avoidance": 59
     },
-    {
-        "Country Code": "FRA",
-        "Country Name": "France",
+    "FRA": {
         "Continent": "Europe",
+        "Country Name": "France",
+        "Individualism": 71,
+        "Indulgence": 48,
+        "Long Term Orientation": 63,
+        "Masculinity": 43,
         "Population": 65129728,
         "Power Distance": 68,
-        "Individualism": 71,
-        "Masculinity": 43,
-        "Uncertainty Avoidance": 86,
-        "Long Term Orientation": 63,
-        "Indulgence": 48
+        "Uncertainty Avoidance": 86
     },
-    {
-        "Country Code": "GAB",
-        "Country Name": "Gabon",
+    "GAB": {
         "Continent": "Africa",
+        "Country Name": "Gabon",
+        "Individualism": 25,
+        "Indulgence": 60,
+        "Long Term Orientation": 20,
+        "Masculinity": 45,
         "Population": 2172579,
         "Power Distance": 80,
-        "Individualism": 25,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 20,
-        "Indulgence": 60
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "GMB",
-        "Country Name": "Gambia",
+    "GMB": {
         "Continent": "Africa",
+        "Country Name": "Gambia",
+        "Individualism": 25,
+        "Indulgence": 40,
+        "Long Term Orientation": 25,
+        "Masculinity": 45,
         "Population": 2347706,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 25,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "GEO",
-        "Country Name": "Georgia",
+    "GEO": {
         "Continent": "Asia",
+        "Country Name": "Georgia",
+        "Individualism": 40,
+        "Indulgence": 32,
+        "Long Term Orientation": 38,
+        "Masculinity": 50,
         "Population": 3996765,
         "Power Distance": 80,
-        "Individualism": 40,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 38,
-        "Indulgence": 32
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "DEU",
-        "Country Name": "Germany",
+    "DEU": {
         "Continent": "Europe",
+        "Country Name": "Germany",
+        "Individualism": 67,
+        "Indulgence": 40,
+        "Long Term Orientation": 83,
+        "Masculinity": 66,
         "Population": 83517045,
         "Power Distance": 35,
-        "Individualism": 67,
-        "Masculinity": 66,
-        "Uncertainty Avoidance": 65,
-        "Long Term Orientation": 83,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 65
     },
-    {
-        "Country Code": "GHA",
-        "Country Name": "Ghana",
+    "GHA": {
         "Continent": "Africa",
+        "Country Name": "Ghana",
+        "Individualism": 30,
+        "Indulgence": 72,
+        "Long Term Orientation": 4,
+        "Masculinity": 40,
         "Population": 28833629,
         "Power Distance": 80,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 65,
-        "Long Term Orientation": 4,
-        "Indulgence": 72
+        "Uncertainty Avoidance": 65
     },
-    {
-        "Country Code": "GBR",
-        "Country Name": "Great Britain",
+    "GBR": {
         "Continent": "Europe",
+        "Country Name": "Great Britain",
+        "Individualism": 89,
+        "Indulgence": 69,
+        "Long Term Orientation": 51,
+        "Masculinity": 66,
         "Population": 67530172,
         "Power Distance": 35,
-        "Individualism": 89,
-        "Masculinity": 66,
-        "Uncertainty Avoidance": 35,
-        "Long Term Orientation": 51,
-        "Indulgence": 69
+        "Uncertainty Avoidance": 35
     },
-    {
-        "Country Code": "GRC",
-        "Country Name": "Greece",
+    "GRC": {
         "Continent": "Europe",
+        "Country Name": "Greece",
+        "Individualism": 35,
+        "Indulgence": 50,
+        "Long Term Orientation": 45,
+        "Masculinity": 57,
         "Population": 10473455,
         "Power Distance": 60,
-        "Individualism": 35,
-        "Masculinity": 57,
-        "Uncertainty Avoidance": 112,
-        "Long Term Orientation": 45,
-        "Indulgence": 50
+        "Uncertainty Avoidance": 112
     },
-    {
-        "Country Code": "GRL",
-        "Country Name": "Greenland",
+    "GRL": {
         "Continent": "Americas",
+        "Country Name": "Greenland",
+        "Individualism": 50,
+        "Indulgence": 70,
+        "Long Term Orientation": 30,
+        "Masculinity": 20,
         "Population": 56672,
         "Power Distance": 20,
-        "Individualism": 50,
-        "Masculinity": 20,
-        "Uncertainty Avoidance": 40,
-        "Long Term Orientation": 30,
-        "Indulgence": 70
+        "Uncertainty Avoidance": 40
     },
-    {
-        "Country Code": "GTM",
-        "Country Name": "Guatemala",
+    "GTM": {
         "Continent": "Americas",
+        "Country Name": "Guatemala",
+        "Individualism": 6,
+        "Indulgence": 90,
+        "Long Term Orientation": 20,
+        "Masculinity": 37,
         "Population": 17581472,
         "Power Distance": 95,
-        "Individualism": 6,
-        "Masculinity": 37,
-        "Uncertainty Avoidance": 101,
-        "Long Term Orientation": 20,
-        "Indulgence": 90
+        "Uncertainty Avoidance": 101
     },
-    {
-        "Country Code": "GUF",
-        "Country Name": "Guiana French",
+    "GUF": {
         "Continent": "Americas",
+        "Country Name": "Guiana French",
+        "Individualism": 47,
+        "Indulgence": 80,
+        "Long Term Orientation": 20,
+        "Masculinity": 37,
         "Population": 282731,
         "Power Distance": 85,
-        "Individualism": 47,
-        "Masculinity": 37,
-        "Uncertainty Avoidance": 92,
-        "Long Term Orientation": 20,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 92
     },
-    {
-        "Country Code": "GIN",
-        "Country Name": "Guinea",
+    "GIN": {
         "Continent": "Africa",
+        "Country Name": "Guinea",
+        "Individualism": 25,
+        "Indulgence": 40,
+        "Long Term Orientation": 25,
+        "Masculinity": 45,
         "Population": 12771246,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 25,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "GNB",
-        "Country Name": "Guinea-Bissau",
+    "GNB": {
         "Continent": "Africa",
+        "Country Name": "Guinea-Bissau",
+        "Individualism": 25,
+        "Indulgence": 40,
+        "Long Term Orientation": 25,
+        "Masculinity": 45,
         "Population": 1920922,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 25,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "GUY",
-        "Country Name": "Guyana British",
+    "GUY": {
         "Continent": "Americas",
+        "Country Name": "Guyana British",
+        "Individualism": 47,
+        "Indulgence": 80,
+        "Long Term Orientation": 20,
+        "Masculinity": 37,
         "Population": 782766,
         "Power Distance": 85,
-        "Individualism": 47,
-        "Masculinity": 37,
-        "Uncertainty Avoidance": 92,
-        "Long Term Orientation": 20,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 92
     },
-    {
-        "Country Code": "HTI",
-        "Country Name": "Haiti",
+    "HTI": {
         "Continent": "Americas",
+        "Country Name": "Haiti",
+        "Individualism": 20,
+        "Indulgence": 80,
+        "Long Term Orientation": 5,
+        "Masculinity": 40,
         "Population": 11263770,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 5,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "HND",
-        "Country Name": "Honduras",
+    "HND": {
         "Continent": "Americas",
+        "Country Name": "Honduras",
+        "Individualism": 20,
+        "Indulgence": 90,
+        "Long Term Orientation": 20,
+        "Masculinity": 40,
         "Population": 9746117,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 20,
-        "Indulgence": 90
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "HKG",
-        "Country Name": "Hong Kong",
+    "HKG": {
         "Continent": "Asia",
+        "Country Name": "Hong Kong",
+        "Individualism": 25,
+        "Indulgence": 17,
+        "Long Term Orientation": 61,
+        "Masculinity": 57,
         "Population": 7436154,
         "Power Distance": 68,
-        "Individualism": 25,
-        "Masculinity": 57,
-        "Uncertainty Avoidance": 29,
-        "Long Term Orientation": 61,
-        "Indulgence": 17
+        "Uncertainty Avoidance": 29
     },
-    {
-        "Country Code": "HUN",
-        "Country Name": "Hungary",
+    "HUN": {
         "Continent": "Europe",
+        "Country Name": "Hungary",
+        "Individualism": 80,
+        "Indulgence": 31,
+        "Long Term Orientation": 58,
+        "Masculinity": 88,
         "Population": 9684679,
         "Power Distance": 46,
-        "Individualism": 80,
-        "Masculinity": 88,
-        "Uncertainty Avoidance": 82,
-        "Long Term Orientation": 58,
-        "Indulgence": 31
+        "Uncertainty Avoidance": 82
     },
-    {
-        "Country Code": "ISL",
-        "Country Name": "Iceland",
+    "ISL": {
         "Continent": "Europe",
+        "Country Name": "Iceland",
+        "Individualism": 60,
+        "Indulgence": 67,
+        "Long Term Orientation": 28,
+        "Masculinity": 10,
         "Population": 339031,
         "Power Distance": 30,
-        "Individualism": 60,
-        "Masculinity": 10,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 28,
-        "Indulgence": 67
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "IND",
-        "Country Name": "India",
+    "IND": {
         "Continent": "Asia",
+        "Country Name": "India",
+        "Individualism": 48,
+        "Indulgence": 26,
+        "Long Term Orientation": 51,
+        "Masculinity": 56,
         "Population": 1366417754,
         "Power Distance": 77,
-        "Individualism": 48,
-        "Masculinity": 56,
-        "Uncertainty Avoidance": 40,
-        "Long Term Orientation": 51,
-        "Indulgence": 26
+        "Uncertainty Avoidance": 40
     },
-    {
-        "Country Code": "IDN",
-        "Country Name": "Indonesia",
+    "IDN": {
         "Continent": "Asia",
+        "Country Name": "Indonesia",
+        "Individualism": 14,
+        "Indulgence": 38,
+        "Long Term Orientation": 62,
+        "Masculinity": 46,
         "Population": 270625568,
         "Power Distance": 78,
-        "Individualism": 14,
-        "Masculinity": 46,
-        "Uncertainty Avoidance": 48,
-        "Long Term Orientation": 62,
-        "Indulgence": 38
+        "Uncertainty Avoidance": 48
     },
-    {
-        "Country Code": "IRN",
-        "Country Name": "Iran",
+    "IRN": {
         "Continent": "Asia",
+        "Country Name": "Iran",
+        "Individualism": 41,
+        "Indulgence": 40,
+        "Long Term Orientation": 14,
+        "Masculinity": 43,
         "Population": 82913906,
         "Power Distance": 58,
-        "Individualism": 41,
-        "Masculinity": 43,
-        "Uncertainty Avoidance": 59,
-        "Long Term Orientation": 14,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 59
     },
-    {
-        "Country Code": "IRQ",
-        "Country Name": "Iraq",
+    "IRQ": {
         "Continent": "Asia",
+        "Country Name": "Iraq",
+        "Individualism": 30,
+        "Indulgence": 17,
+        "Long Term Orientation": 25,
+        "Masculinity": 70,
         "Population": 39309783,
         "Power Distance": 95,
-        "Individualism": 30,
-        "Masculinity": 70,
-        "Uncertainty Avoidance": 85,
-        "Long Term Orientation": 25,
-        "Indulgence": 17
+        "Uncertainty Avoidance": 85
     },
-    {
-        "Country Code": "IRL",
-        "Country Name": "Ireland",
+    "IRL": {
         "Continent": "Europe",
+        "Country Name": "Ireland",
+        "Individualism": 70,
+        "Indulgence": 65,
+        "Long Term Orientation": 24,
+        "Masculinity": 68,
         "Population": 4882495,
         "Power Distance": 28,
-        "Individualism": 70,
-        "Masculinity": 68,
-        "Uncertainty Avoidance": 35,
-        "Long Term Orientation": 24,
-        "Indulgence": 65
+        "Uncertainty Avoidance": 35
     },
-    {
-        "Country Code": "ISR",
-        "Country Name": "Israel",
+    "ISR": {
         "Continent": "Asia",
+        "Country Name": "Israel",
+        "Individualism": 54,
+        "Indulgence": 40,
+        "Long Term Orientation": 38,
+        "Masculinity": 47,
         "Population": 8519377,
         "Power Distance": 13,
-        "Individualism": 54,
-        "Masculinity": 47,
-        "Uncertainty Avoidance": 81,
-        "Long Term Orientation": 38,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 81
     },
-    {
-        "Country Code": "ITA",
-        "Country Name": "Italy",
+    "ITA": {
         "Continent": "Europe",
+        "Country Name": "Italy",
+        "Individualism": 76,
+        "Indulgence": 30,
+        "Long Term Orientation": 61,
+        "Masculinity": 70,
         "Population": 60550075,
         "Power Distance": 50,
-        "Individualism": 76,
-        "Masculinity": 70,
-        "Uncertainty Avoidance": 75,
-        "Long Term Orientation": 61,
-        "Indulgence": 30
+        "Uncertainty Avoidance": 75
     },
-    {
-        "Country Code": "JAM",
-        "Country Name": "Jamaica",
+    "JAM": {
         "Continent": "Americas",
+        "Country Name": "Jamaica",
+        "Individualism": 39,
+        "Indulgence": 90,
+        "Long Term Orientation": 10,
+        "Masculinity": 68,
         "Population": 2948279,
         "Power Distance": 45,
-        "Individualism": 39,
-        "Masculinity": 68,
-        "Uncertainty Avoidance": 13,
-        "Long Term Orientation": 10,
-        "Indulgence": 90
+        "Uncertainty Avoidance": 13
     },
-    {
-        "Country Code": "JPN",
-        "Country Name": "Japan",
+    "JPN": {
         "Continent": "Asia",
+        "Country Name": "Japan",
+        "Individualism": 46,
+        "Indulgence": 42,
+        "Long Term Orientation": 88,
+        "Masculinity": 95,
         "Population": 126860301,
         "Power Distance": 54,
-        "Individualism": 46,
-        "Masculinity": 95,
-        "Uncertainty Avoidance": 92,
-        "Long Term Orientation": 88,
-        "Indulgence": 42
+        "Uncertainty Avoidance": 92
     },
-    {
-        "Country Code": "JOR",
-        "Country Name": "Jordan",
+    "JOR": {
         "Continent": "Asia",
+        "Country Name": "Jordan",
+        "Individualism": 30,
+        "Indulgence": 43,
+        "Long Term Orientation": 16,
+        "Masculinity": 45,
         "Population": 10101694,
         "Power Distance": 70,
-        "Individualism": 30,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 65,
-        "Long Term Orientation": 16,
-        "Indulgence": 43
+        "Uncertainty Avoidance": 65
     },
-    {
-        "Country Code": "KAZ",
-        "Country Name": "Kazakhstan",
+    "KAZ": {
         "Continent": "Asia",
+        "Country Name": "Kazakhstan",
+        "Individualism": 30,
+        "Indulgence": 40,
+        "Long Term Orientation": 60,
+        "Masculinity": 50,
         "Population": 18551427,
         "Power Distance": 90,
-        "Individualism": 30,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 60,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "KEN",
-        "Country Name": "Kenya",
+    "KEN": {
         "Continent": "Africa",
+        "Country Name": "Kenya",
+        "Individualism": 25,
+        "Indulgence": 40,
+        "Long Term Orientation": 30,
+        "Masculinity": 60,
         "Population": 52573973,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 30,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "KWT",
-        "Country Name": "Kuwait",
+    "KWT": {
         "Continent": "Asia",
+        "Country Name": "Kuwait",
+        "Individualism": 25,
+        "Indulgence": 40,
+        "Long Term Orientation": 20,
+        "Masculinity": 40,
         "Population": 4207083,
         "Power Distance": 90,
-        "Individualism": 25,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 20,
-        "Long Term Orientation": 20,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 20
     },
-    {
-        "Country Code": "PRK",
-        "Country Name": "North Korea",
+    "PRK": {
         "Continent": "Asia",
+        "Country Name": "North Korea",
+        "Individualism": 15,
+        "Indulgence": 20,
+        "Long Term Orientation": 100,
+        "Masculinity": 50,
         "Population": 25666161,
         "Power Distance": 80,
-        "Individualism": 15,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 85,
-        "Long Term Orientation": 100,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 85
     },
-    {
-        "Country Code": "KOR",
-        "Country Name": "South Korea",
+    "KOR": {
         "Continent": "Asia",
+        "Country Name": "South Korea",
+        "Individualism": 18,
+        "Indulgence": 29,
+        "Long Term Orientation": 100,
+        "Masculinity": 39,
         "Population": 51225308,
         "Power Distance": 60,
-        "Individualism": 18,
-        "Masculinity": 39,
-        "Uncertainty Avoidance": 85,
-        "Long Term Orientation": 100,
-        "Indulgence": 29
+        "Uncertainty Avoidance": 85
     },
-    {
-        "Country Code": "KGZ",
-        "Country Name": "Kyrgyzstan",
+    "KGZ": {
         "Continent": "Asia",
+        "Country Name": "Kyrgyzstan",
+        "Individualism": 30,
+        "Indulgence": 39,
+        "Long Term Orientation": 66,
+        "Masculinity": 35,
         "Population": 6415850,
         "Power Distance": 70,
-        "Individualism": 30,
-        "Masculinity": 35,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 66,
-        "Indulgence": 39
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "LVA",
-        "Country Name": "Latvia",
+    "LVA": {
         "Continent": "Europe",
+        "Country Name": "Latvia",
+        "Individualism": 70,
+        "Indulgence": 13,
+        "Long Term Orientation": 69,
+        "Masculinity": 9,
         "Population": 1906743,
         "Power Distance": 44,
-        "Individualism": 70,
-        "Masculinity": 9,
-        "Uncertainty Avoidance": 63,
-        "Long Term Orientation": 69,
-        "Indulgence": 13
+        "Uncertainty Avoidance": 63
     },
-    {
-        "Country Code": "LAO",
-        "Country Name": "Laos",
+    "LAO": {
         "Continent": "Asia",
+        "Country Name": "Laos",
+        "Individualism": 10,
+        "Indulgence": 40,
+        "Long Term Orientation": 20,
+        "Masculinity": 30,
         "Population": 7169455,
         "Power Distance": 80,
-        "Individualism": 10,
-        "Masculinity": 30,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 20,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "LBN",
-        "Country Name": "Lebanon",
+    "LBN": {
         "Continent": "Asia",
+        "Country Name": "Lebanon",
+        "Individualism": 40,
+        "Indulgence": 60,
+        "Long Term Orientation": 14,
+        "Masculinity": 50,
         "Population": 6855713,
         "Power Distance": 75,
-        "Individualism": 40,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 14,
-        "Indulgence": 60
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "LSO",
-        "Country Name": "Lesotho",
+    "LSO": {
         "Continent": "Africa",
+        "Country Name": "Lesotho",
+        "Individualism": 30,
+        "Indulgence": 70,
+        "Long Term Orientation": 15,
+        "Masculinity": 40,
         "Population": 2125268,
         "Power Distance": 70,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 15,
-        "Indulgence": 70
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "LBR",
-        "Country Name": "Liberia",
+    "LBR": {
         "Continent": "Africa",
+        "Country Name": "Liberia",
+        "Individualism": 20,
+        "Indulgence": 60,
+        "Long Term Orientation": 23,
+        "Masculinity": 40,
         "Population": 4937374,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 23,
-        "Indulgence": 60
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "LBY",
-        "Country Name": "Libya",
+    "LBY": {
         "Continent": "Africa",
+        "Country Name": "Libya",
+        "Individualism": 38,
+        "Indulgence": 34,
+        "Long Term Orientation": 23,
+        "Masculinity": 52,
         "Population": 6777452,
         "Power Distance": 80,
-        "Individualism": 38,
-        "Masculinity": 52,
-        "Uncertainty Avoidance": 68,
-        "Long Term Orientation": 23,
-        "Indulgence": 34
+        "Uncertainty Avoidance": 68
     },
-    {
-        "Country Code": "LTU",
-        "Country Name": "Lithuania",
+    "LTU": {
         "Continent": "Europe",
+        "Country Name": "Lithuania",
+        "Individualism": 60,
+        "Indulgence": 56,
+        "Long Term Orientation": 82,
+        "Masculinity": 19,
         "Population": 2759627,
         "Power Distance": 42,
-        "Individualism": 60,
-        "Masculinity": 19,
-        "Uncertainty Avoidance": 65,
-        "Long Term Orientation": 82,
-        "Indulgence": 56
+        "Uncertainty Avoidance": 65
     },
-    {
-        "Country Code": "LUX",
-        "Country Name": "Luxembourg",
+    "LUX": {
         "Continent": "Europe",
+        "Country Name": "Luxembourg",
+        "Individualism": 60,
+        "Indulgence": 35,
+        "Long Term Orientation": 64,
+        "Masculinity": 50,
         "Population": 615729,
         "Power Distance": 40,
-        "Individualism": 60,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 64,
-        "Indulgence": 35
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "MKD",
-        "Country Name": "North Macedonia",
+    "MKD": {
         "Continent": "Europe",
+        "Country Name": "North Macedonia",
+        "Individualism": 30,
+        "Indulgence": 50,
+        "Long Term Orientation": 62,
+        "Masculinity": 50,
         "Population": 2083459,
         "Power Distance": 80,
-        "Individualism": 30,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 62,
-        "Indulgence": 50
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "MDG",
-        "Country Name": "Madagascar",
+    "MDG": {
         "Continent": "Africa",
+        "Country Name": "Madagascar",
+        "Individualism": 10,
+        "Indulgence": 42,
+        "Long Term Orientation": 30,
+        "Masculinity": 50,
         "Population": 26969307,
         "Power Distance": 80,
-        "Individualism": 10,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 30,
-        "Indulgence": 42
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "MWI",
-        "Country Name": "Malawi",
+    "MWI": {
         "Continent": "Africa",
+        "Country Name": "Malawi",
+        "Individualism": 30,
+        "Indulgence": 42,
+        "Long Term Orientation": 30,
+        "Masculinity": 40,
         "Population": 18628747,
         "Power Distance": 70,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 30,
-        "Indulgence": 42
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "MYS",
-        "Country Name": "Malaysia",
+    "MYS": {
         "Continent": "Asia",
+        "Country Name": "Malaysia",
+        "Individualism": 26,
+        "Indulgence": 43,
+        "Long Term Orientation": 41,
+        "Masculinity": 50,
         "Population": 31949777,
         "Power Distance": 104,
-        "Individualism": 26,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 36,
-        "Long Term Orientation": 41,
-        "Indulgence": 43
+        "Uncertainty Avoidance": 36
     },
-    {
-        "Country Code": "MLI",
-        "Country Name": "Mali",
+    "MLI": {
         "Continent": "Africa",
+        "Country Name": "Mali",
+        "Individualism": 20,
+        "Indulgence": 66,
+        "Long Term Orientation": 20,
+        "Masculinity": 40,
         "Population": 19658031,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 20,
-        "Indulgence": 66
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "MLT",
-        "Country Name": "Malta",
+    "MLT": {
         "Continent": "Europe",
+        "Country Name": "Malta",
+        "Individualism": 59,
+        "Indulgence": 66,
+        "Long Term Orientation": 47,
+        "Masculinity": 47,
         "Population": 440372,
         "Power Distance": 56,
-        "Individualism": 59,
-        "Masculinity": 47,
-        "Uncertainty Avoidance": 96,
-        "Long Term Orientation": 47,
-        "Indulgence": 66
+        "Uncertainty Avoidance": 96
     },
-    {
-        "Country Code": "MRT",
-        "Country Name": "Mauritania",
+    "MRT": {
         "Continent": "Africa",
+        "Country Name": "Mauritania",
+        "Individualism": 40,
+        "Indulgence": 10,
+        "Long Term Orientation": 15,
+        "Masculinity": 50,
         "Population": 4525696,
         "Power Distance": 70,
-        "Individualism": 40,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 15,
-        "Indulgence": 10
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "MEX",
-        "Country Name": "Mexico",
+    "MEX": {
         "Continent": "Americas",
+        "Country Name": "Mexico",
+        "Individualism": 30,
+        "Indulgence": 97,
+        "Long Term Orientation": 24,
+        "Masculinity": 69,
         "Population": 127575529,
         "Power Distance": 81,
-        "Individualism": 30,
-        "Masculinity": 69,
-        "Uncertainty Avoidance": 82,
-        "Long Term Orientation": 24,
-        "Indulgence": 97
+        "Uncertainty Avoidance": 82
     },
-    {
-        "Country Code": "MOL",
-        "Country Name": "Moldova",
+    "MOL": {
         "Continent": "Europe",
+        "Country Name": "Moldova",
+        "Individualism": 40,
+        "Indulgence": 19,
+        "Long Term Orientation": 71,
+        "Masculinity": 40,
         "Population": 4043263,
         "Power Distance": 90,
-        "Individualism": 40,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 71,
-        "Indulgence": 19
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "MNG",
-        "Country Name": "Mongolia",
+    "MNG": {
         "Continent": "Asia",
+        "Country Name": "Mongolia",
+        "Individualism": 20,
+        "Indulgence": 20,
+        "Long Term Orientation": 70,
+        "Masculinity": 60,
         "Population": 3225167,
         "Power Distance": 70,
-        "Individualism": 20,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 30,
-        "Long Term Orientation": 70,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 30
     },
-    {
-        "Country Code": "MNE",
-        "Country Name": "Montenegro",
+    "MNE": {
         "Continent": "Europe",
+        "Country Name": "Montenegro",
+        "Individualism": 30,
+        "Indulgence": 20,
+        "Long Term Orientation": 75,
+        "Masculinity": 50,
         "Population": 627987,
         "Power Distance": 80,
-        "Individualism": 30,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 75,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "MAR",
-        "Country Name": "Morocco",
+    "MAR": {
         "Continent": "Africa",
+        "Country Name": "Morocco",
+        "Individualism": 46,
+        "Indulgence": 25,
+        "Long Term Orientation": 14,
+        "Masculinity": 53,
         "Population": 36471769,
         "Power Distance": 70,
-        "Individualism": 46,
-        "Masculinity": 53,
-        "Uncertainty Avoidance": 68,
-        "Long Term Orientation": 14,
-        "Indulgence": 25
+        "Uncertainty Avoidance": 68
     },
-    {
-        "Country Code": "MOZ",
-        "Country Name": "Mozambique",
+    "MOZ": {
         "Continent": "Africa",
+        "Country Name": "Mozambique",
+        "Individualism": 15,
+        "Indulgence": 80,
+        "Long Term Orientation": 11,
+        "Masculinity": 38,
         "Population": 30366036,
         "Power Distance": 85,
-        "Individualism": 15,
-        "Masculinity": 38,
-        "Uncertainty Avoidance": 44,
-        "Long Term Orientation": 11,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 44
     },
-    {
-        "Country Code": "MMR",
-        "Country Name": "Myanmar",
+    "MMR": {
         "Continent": "Asia",
+        "Country Name": "Myanmar",
+        "Individualism": 20,
+        "Indulgence": 30,
+        "Long Term Orientation": 50,
+        "Masculinity": 50,
         "Population": 54045420,
         "Power Distance": 90,
-        "Individualism": 20,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 50,
-        "Indulgence": 30
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "NAM",
-        "Country Name": "Namibia",
+    "NAM": {
         "Continent": "Africa",
+        "Country Name": "Namibia",
+        "Individualism": 30,
+        "Indulgence": 50,
+        "Long Term Orientation": 35,
+        "Masculinity": 40,
         "Population": 2494530,
         "Power Distance": 65,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 45,
-        "Long Term Orientation": 35,
-        "Indulgence": 50
+        "Uncertainty Avoidance": 45
     },
-    {
-        "Country Code": "NPL",
-        "Country Name": "Nepal",
+    "NPL": {
         "Continent": "Asia",
+        "Country Name": "Nepal",
+        "Individualism": 30,
+        "Indulgence": 40,
+        "Long Term Orientation": 60,
+        "Masculinity": 40,
         "Population": 28608710,
         "Power Distance": 65,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 40,
-        "Long Term Orientation": 60,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 40
     },
-    {
-        "Country Code": "NLD",
-        "Country Name": "Netherlands",
+    "NLD": {
         "Continent": "Europe",
+        "Country Name": "Netherlands",
+        "Individualism": 80,
+        "Indulgence": 68,
+        "Long Term Orientation": 67,
+        "Masculinity": 14,
         "Population": 17097130,
         "Power Distance": 38,
-        "Individualism": 80,
-        "Masculinity": 14,
-        "Uncertainty Avoidance": 53,
-        "Long Term Orientation": 67,
-        "Indulgence": 68
+        "Uncertainty Avoidance": 53
     },
-    {
-        "Country Code": "NZL",
-        "Country Name": "New Zealand",
+    "NZL": {
         "Continent": "Oceania",
+        "Country Name": "New Zealand",
+        "Individualism": 79,
+        "Indulgence": 75,
+        "Long Term Orientation": 33,
+        "Masculinity": 58,
         "Population": 4783063,
         "Power Distance": 22,
-        "Individualism": 79,
-        "Masculinity": 58,
-        "Uncertainty Avoidance": 49,
-        "Long Term Orientation": 33,
-        "Indulgence": 75
+        "Uncertainty Avoidance": 49
     },
-    {
-        "Country Code": "NIC",
-        "Country Name": "Nicaragua",
+    "NIC": {
         "Continent": "Americas",
+        "Country Name": "Nicaragua",
+        "Individualism": 20,
+        "Indulgence": 90,
+        "Long Term Orientation": 10,
+        "Masculinity": 40,
         "Population": 6545502,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 10,
-        "Indulgence": 90
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "NER",
-        "Country Name": "Niger",
+    "NER": {
         "Continent": "Africa",
+        "Country Name": "Niger",
+        "Individualism": 30,
+        "Indulgence": 50,
+        "Long Term Orientation": 20,
+        "Masculinity": 60,
         "Population": 23310715,
         "Power Distance": 80,
-        "Individualism": 30,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 20,
-        "Indulgence": 50
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "NGA",
-        "Country Name": "Nigeria",
+    "NGA": {
         "Continent": "Africa",
+        "Country Name": "Nigeria",
+        "Individualism": 30,
+        "Indulgence": 84,
+        "Long Term Orientation": 13,
+        "Masculinity": 60,
         "Population": 200963599,
         "Power Distance": 80,
-        "Individualism": 30,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 13,
-        "Indulgence": 84
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "NOR",
-        "Country Name": "Norway",
+    "NOR": {
         "Continent": "Europe",
+        "Country Name": "Norway",
+        "Individualism": 69,
+        "Indulgence": 55,
+        "Long Term Orientation": 35,
+        "Masculinity": 8,
         "Population": 5378857,
         "Power Distance": 31,
-        "Individualism": 69,
-        "Masculinity": 8,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 35,
-        "Indulgence": 55
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "OMN",
-        "Country Name": "Oman",
+    "OMN": {
         "Continent": "Asia",
+        "Country Name": "Oman",
+        "Individualism": 25,
+        "Indulgence": 52,
+        "Long Term Orientation": 35,
+        "Masculinity": 60,
         "Population": 4974986,
         "Power Distance": 90,
-        "Individualism": 25,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 80,
-        "Long Term Orientation": 35,
-        "Indulgence": 52
+        "Uncertainty Avoidance": 80
     },
-    {
-        "Country Code": "PAK",
-        "Country Name": "Pakistan",
+    "PAK": {
         "Continent": "Asia",
+        "Country Name": "Pakistan",
+        "Individualism": 14,
+        "Indulgence": 0,
+        "Long Term Orientation": 50,
+        "Masculinity": 50,
         "Population": 216565318,
         "Power Distance": 55,
-        "Individualism": 14,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 50,
-        "Indulgence": 0
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "PSE",
-        "Country Name": "Palestine",
+    "PSE": {
         "Continent": "Asia",
+        "Country Name": "Palestine",
+        "Individualism": 30,
+        "Indulgence": 40,
+        "Long Term Orientation": 16,
+        "Masculinity": 45,
         "Population": 4981420,
         "Power Distance": 80,
-        "Individualism": 30,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 65,
-        "Long Term Orientation": 16,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 65
     },
-    {
-        "Country Code": "PAN",
-        "Country Name": "Panama",
+    "PAN": {
         "Continent": "Americas",
+        "Country Name": "Panama",
+        "Individualism": 11,
+        "Indulgence": 80,
+        "Long Term Orientation": 20,
+        "Masculinity": 44,
         "Population": 4246439,
         "Power Distance": 95,
-        "Individualism": 11,
-        "Masculinity": 44,
-        "Uncertainty Avoidance": 86,
-        "Long Term Orientation": 20,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 86
     },
-    {
-        "Country Code": "PNG",
-        "Country Name": "Papua New Guinea",
+    "PNG": {
         "Continent": "Oceania",
+        "Country Name": "Papua New Guinea",
+        "Individualism": 50,
+        "Indulgence": 50,
+        "Long Term Orientation": 30,
+        "Masculinity": 70,
         "Population": 8776109,
         "Power Distance": 40,
-        "Individualism": 50,
-        "Masculinity": 70,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 30,
-        "Indulgence": 50
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "PRY",
-        "Country Name": "Paraguay",
+    "PRY": {
         "Continent": "Americas",
+        "Country Name": "Paraguay",
+        "Individualism": 36,
+        "Indulgence": 53,
+        "Long Term Orientation": 26,
+        "Masculinity": 38,
         "Population": 7044636,
         "Power Distance": 61,
-        "Individualism": 36,
-        "Masculinity": 38,
-        "Uncertainty Avoidance": 100,
-        "Long Term Orientation": 26,
-        "Indulgence": 53
+        "Uncertainty Avoidance": 100
     },
-    {
-        "Country Code": "PER",
-        "Country Name": "Peru",
+    "PER": {
         "Continent": "Americas",
+        "Country Name": "Peru",
+        "Individualism": 16,
+        "Indulgence": 46,
+        "Long Term Orientation": 25,
+        "Masculinity": 42,
         "Population": 32510453,
         "Power Distance": 64,
-        "Individualism": 16,
-        "Masculinity": 42,
-        "Uncertainty Avoidance": 87,
-        "Long Term Orientation": 25,
-        "Indulgence": 46
+        "Uncertainty Avoidance": 87
     },
-    {
-        "Country Code": "PHL",
-        "Country Name": "Philippines",
+    "PHL": {
         "Continent": "Asia",
+        "Country Name": "Philippines",
+        "Individualism": 32,
+        "Indulgence": 42,
+        "Long Term Orientation": 27,
+        "Masculinity": 64,
         "Population": 108116615,
         "Power Distance": 94,
-        "Individualism": 32,
-        "Masculinity": 64,
-        "Uncertainty Avoidance": 44,
-        "Long Term Orientation": 27,
-        "Indulgence": 42
+        "Uncertainty Avoidance": 44
     },
-    {
-        "Country Code": "POL",
-        "Country Name": "Poland",
+    "POL": {
         "Continent": "Europe",
+        "Country Name": "Poland",
+        "Individualism": 60,
+        "Indulgence": 29,
+        "Long Term Orientation": 38,
+        "Masculinity": 64,
         "Population": 37887768,
         "Power Distance": 68,
-        "Individualism": 60,
-        "Masculinity": 64,
-        "Uncertainty Avoidance": 93,
-        "Long Term Orientation": 38,
-        "Indulgence": 29
+        "Uncertainty Avoidance": 93
     },
-    {
-        "Country Code": "PRT",
-        "Country Name": "Portugal",
+    "PRT": {
         "Continent": "Europe",
+        "Country Name": "Portugal",
+        "Individualism": 27,
+        "Indulgence": 33,
+        "Long Term Orientation": 28,
+        "Masculinity": 31,
         "Population": 10226187,
         "Power Distance": 63,
-        "Individualism": 27,
-        "Masculinity": 31,
-        "Uncertainty Avoidance": 104,
-        "Long Term Orientation": 28,
-        "Indulgence": 33
+        "Uncertainty Avoidance": 104
     },
-    {
-        "Country Code": "PRI",
-        "Country Name": "Puerto Rico",
+    "PRI": {
         "Continent": "Americas",
+        "Country Name": "Puerto Rico",
+        "Individualism": 20,
+        "Indulgence": 90,
+        "Long Term Orientation": 0,
+        "Masculinity": 40,
         "Population": 2933408,
         "Power Distance": 70,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 0,
-        "Indulgence": 90
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "ROU",
-        "Country Name": "Romania",
+    "ROU": {
         "Continent": "Europe",
+        "Country Name": "Romania",
+        "Individualism": 30,
+        "Indulgence": 20,
+        "Long Term Orientation": 52,
+        "Masculinity": 42,
         "Population": 19364557,
         "Power Distance": 90,
-        "Individualism": 30,
-        "Masculinity": 42,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 52,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "RUS",
-        "Country Name": "Russia",
+    "RUS": {
         "Continent": "Europe",
+        "Country Name": "Russia",
+        "Individualism": 39,
+        "Indulgence": 20,
+        "Long Term Orientation": 81,
+        "Masculinity": 36,
         "Population": 145872256,
         "Power Distance": 93,
-        "Individualism": 39,
-        "Masculinity": 36,
-        "Uncertainty Avoidance": 95,
-        "Long Term Orientation": 81,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 95
     },
-    {
-        "Country Code": "RWA",
-        "Country Name": "Rwanda",
+    "RWA": {
         "Continent": "Africa",
+        "Country Name": "Rwanda",
+        "Individualism": 25,
+        "Indulgence": 37,
+        "Long Term Orientation": 18,
+        "Masculinity": 60,
         "Population": 12626950,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 18,
-        "Indulgence": 37
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "SAU",
-        "Country Name": "Saudi Arabia",
+    "SAU": {
         "Continent": "Asia",
+        "Country Name": "Saudi Arabia",
+        "Individualism": 25,
+        "Indulgence": 52,
+        "Long Term Orientation": 36,
+        "Masculinity": 60,
         "Population": 34268528,
         "Power Distance": 95,
-        "Individualism": 25,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 80,
-        "Long Term Orientation": 36,
-        "Indulgence": 52
+        "Uncertainty Avoidance": 80
     },
-    {
-        "Country Code": "SEN",
-        "Country Name": "Senegal",
+    "SEN": {
         "Continent": "Africa",
+        "Country Name": "Senegal",
+        "Individualism": 25,
+        "Indulgence": 66,
+        "Long Term Orientation": 20,
+        "Masculinity": 45,
         "Population": 16296364,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 20,
-        "Indulgence": 66
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "SRB",
-        "Country Name": "Serbia",
+    "SRB": {
         "Continent": "Europe",
+        "Country Name": "Serbia",
+        "Individualism": 25,
+        "Indulgence": 28,
+        "Long Term Orientation": 52,
+        "Masculinity": 43,
         "Population": 8772235,
         "Power Distance": 86,
-        "Individualism": 25,
-        "Masculinity": 43,
-        "Uncertainty Avoidance": 92,
-        "Long Term Orientation": 52,
-        "Indulgence": 28
+        "Uncertainty Avoidance": 92
     },
-    {
-        "Country Code": "SLE",
-        "Country Name": "Sierra Leone",
+    "SLE": {
         "Continent": "Africa",
+        "Country Name": "Sierra Leone",
+        "Individualism": 20,
+        "Indulgence": 46,
+        "Long Term Orientation": 20,
+        "Masculinity": 40,
         "Population": 7813215,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 20,
-        "Indulgence": 46
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "SGP",
-        "Country Name": "Singapore",
+    "SGP": {
         "Continent": "Asia",
+        "Country Name": "Singapore",
+        "Individualism": 20,
+        "Indulgence": 46,
+        "Long Term Orientation": 72,
+        "Masculinity": 48,
         "Population": 5804337,
         "Power Distance": 74,
-        "Individualism": 20,
-        "Masculinity": 48,
-        "Uncertainty Avoidance": 8,
-        "Long Term Orientation": 72,
-        "Indulgence": 46
+        "Uncertainty Avoidance": 8
     },
-    {
-        "Country Code": "SVK",
-        "Country Name": "Slovakia",
+    "SVK": {
         "Continent": "Europe",
+        "Country Name": "Slovakia",
+        "Individualism": 52,
+        "Indulgence": 28,
+        "Long Term Orientation": 77,
+        "Masculinity": 110,
         "Population": 5457013,
         "Power Distance": 104,
-        "Individualism": 52,
-        "Masculinity": 110,
-        "Uncertainty Avoidance": 51,
-        "Long Term Orientation": 77,
-        "Indulgence": 28
+        "Uncertainty Avoidance": 51
     },
-    {
-        "Country Code": "SVN",
-        "Country Name": "Slovenia",
+    "SVN": {
         "Continent": "Europe",
+        "Country Name": "Slovenia",
+        "Individualism": 27,
+        "Indulgence": 48,
+        "Long Term Orientation": 49,
+        "Masculinity": 19,
         "Population": 2078654,
         "Power Distance": 71,
-        "Individualism": 27,
-        "Masculinity": 19,
-        "Uncertainty Avoidance": 88,
-        "Long Term Orientation": 49,
-        "Indulgence": 48
+        "Uncertainty Avoidance": 88
     },
-    {
-        "Country Code": "SOM",
-        "Country Name": "Somalia",
+    "SOM": {
         "Continent": "Africa",
+        "Country Name": "Somalia",
+        "Individualism": 25,
+        "Indulgence": 20,
+        "Long Term Orientation": 10,
+        "Masculinity": 65,
         "Population": 15442905,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 65,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 10,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "ZAF",
-        "Country Name": "South Africa",
+    "ZAF": {
         "Continent": "Africa",
+        "Country Name": "South Africa",
+        "Individualism": 65,
+        "Indulgence": 63,
+        "Long Term Orientation": 34,
+        "Masculinity": 63,
         "Population": 58558270,
         "Power Distance": 49,
-        "Individualism": 65,
-        "Masculinity": 63,
-        "Uncertainty Avoidance": 49,
-        "Long Term Orientation": 34,
-        "Indulgence": 63
+        "Uncertainty Avoidance": 49
     },
-    {
-        "Country Code": "ESP",
-        "Country Name": "Spain",
+    "ESP": {
         "Continent": "Europe",
+        "Country Name": "Spain",
+        "Individualism": 51,
+        "Indulgence": 30,
+        "Long Term Orientation": 48,
+        "Masculinity": 42,
         "Population": 46736776,
         "Power Distance": 57,
-        "Individualism": 51,
-        "Masculinity": 42,
-        "Uncertainty Avoidance": 86,
-        "Long Term Orientation": 48,
-        "Indulgence": 30
+        "Uncertainty Avoidance": 86
     },
-    {
-        "Country Code": "LKA",
-        "Country Name": "Sri Lanka",
+    "LKA": {
         "Continent": "Asia",
+        "Country Name": "Sri Lanka",
+        "Individualism": 40,
+        "Indulgence": 30,
+        "Long Term Orientation": 10,
+        "Masculinity": 50,
         "Population": 21323733,
         "Power Distance": 70,
-        "Individualism": 40,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 10,
-        "Indulgence": 30
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "SDN",
-        "Country Name": "Sudan",
+    "SDN": {
         "Continent": "Africa",
+        "Country Name": "Sudan",
+        "Individualism": 40,
+        "Indulgence": 40,
+        "Long Term Orientation": 10,
+        "Masculinity": 60,
         "Population": 42813238,
         "Power Distance": 80,
-        "Individualism": 40,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 80,
-        "Long Term Orientation": 10,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 80
     },
-    {
-        "Country Code": "SSD",
-        "Country Name": "Sudan South",
+    "SSD": {
         "Continent": "Africa",
+        "Country Name": "Sudan South",
+        "Individualism": 20,
+        "Indulgence": 80,
+        "Long Term Orientation": 20,
+        "Masculinity": 50,
         "Population": 11062113,
         "Power Distance": 80,
-        "Individualism": 20,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 20,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "SUR",
-        "Country Name": "Suriname",
+    "SUR": {
         "Continent": "Americas",
+        "Country Name": "Suriname",
+        "Individualism": 47,
+        "Indulgence": 80,
+        "Long Term Orientation": 30,
+        "Masculinity": 37,
         "Population": 581372,
         "Power Distance": 85,
-        "Individualism": 47,
-        "Masculinity": 37,
-        "Uncertainty Avoidance": 92,
-        "Long Term Orientation": 30,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 92
     },
-    {
-        "Country Code": "SWE",
-        "Country Name": "Sweden",
+    "SWE": {
         "Continent": "Europe",
+        "Country Name": "Sweden",
+        "Individualism": 71,
+        "Indulgence": 78,
+        "Long Term Orientation": 53,
+        "Masculinity": 5,
         "Population": 10036379,
         "Power Distance": 31,
-        "Individualism": 71,
-        "Masculinity": 5,
-        "Uncertainty Avoidance": 29,
-        "Long Term Orientation": 53,
-        "Indulgence": 78
+        "Uncertainty Avoidance": 29
     },
-    {
-        "Country Code": "CHE",
-        "Country Name": "Switzerland",
+    "CHE": {
         "Continent": "Europe",
+        "Country Name": "Switzerland",
+        "Individualism": 68,
+        "Indulgence": 66,
+        "Long Term Orientation": 74,
+        "Masculinity": 70,
         "Population": 8591365,
         "Power Distance": 34,
-        "Individualism": 68,
-        "Masculinity": 70,
-        "Uncertainty Avoidance": 58,
-        "Long Term Orientation": 74,
-        "Indulgence": 66
+        "Uncertainty Avoidance": 58
     },
-    {
-        "Country Code": "SYR",
-        "Country Name": "Syria",
+    "SYR": {
         "Continent": "Asia",
+        "Country Name": "Syria",
+        "Individualism": 35,
+        "Indulgence": 20,
+        "Long Term Orientation": 30,
+        "Masculinity": 52,
         "Population": 17070135,
         "Power Distance": 80,
-        "Individualism": 35,
-        "Masculinity": 52,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 30,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "TWN",
-        "Country Name": "Taiwan",
+    "TWN": {
         "Continent": "Asia",
+        "Country Name": "Taiwan",
+        "Individualism": 17,
+        "Indulgence": 49,
+        "Long Term Orientation": 93,
+        "Masculinity": 45,
         "Population": 23773876,
         "Power Distance": 58,
-        "Individualism": 17,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 69,
-        "Long Term Orientation": 93,
-        "Indulgence": 49
+        "Uncertainty Avoidance": 69
     },
-    {
-        "Country Code": "TJK",
-        "Country Name": "Tajikistan",
+    "TJK": {
         "Continent": "Asia",
+        "Country Name": "Tajikistan",
+        "Individualism": 20,
+        "Indulgence": 40,
+        "Long Term Orientation": 65,
+        "Masculinity": 40,
         "Population": 9321018,
         "Power Distance": 90,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 65,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "TZA",
-        "Country Name": "Tanzania",
+    "TZA": {
         "Continent": "Africa",
+        "Country Name": "Tanzania",
+        "Individualism": 25,
+        "Indulgence": 38,
+        "Long Term Orientation": 34,
+        "Masculinity": 40,
         "Population": 58005463,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 34,
-        "Indulgence": 38
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "THA",
-        "Country Name": "Thailand",
+    "THA": {
         "Continent": "Asia",
+        "Country Name": "Thailand",
+        "Individualism": 20,
+        "Indulgence": 45,
+        "Long Term Orientation": 32,
+        "Masculinity": 34,
         "Population": 69037513,
         "Power Distance": 64,
-        "Individualism": 20,
-        "Masculinity": 34,
-        "Uncertainty Avoidance": 64,
-        "Long Term Orientation": 32,
-        "Indulgence": 45
+        "Uncertainty Avoidance": 64
     },
-    {
-        "Country Code": "TLS",
-        "Country Name": "Timor-Leste",
+    "TLS": {
         "Continent": "Asia",
+        "Country Name": "Timor-Leste",
+        "Individualism": 14,
+        "Indulgence": 40,
+        "Long Term Orientation": 60,
+        "Masculinity": 46,
         "Population": 1293119,
         "Power Distance": 78,
-        "Individualism": 14,
-        "Masculinity": 46,
-        "Uncertainty Avoidance": 48,
-        "Long Term Orientation": 60,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 48
     },
-    {
-        "Country Code": "TGO",
-        "Country Name": "Togo",
+    "TGO": {
         "Continent": "Africa",
+        "Country Name": "Togo",
+        "Individualism": 15,
+        "Indulgence": 80,
+        "Long Term Orientation": 15,
+        "Masculinity": 40,
         "Population": 8082366,
         "Power Distance": 80,
-        "Individualism": 15,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 65,
-        "Long Term Orientation": 15,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 65
     },
-    {
-        "Country Code": "TTO",
-        "Country Name": "Trinidad and Tobago",
+    "TTO": {
         "Continent": "Americas",
+        "Country Name": "Trinidad and Tobago",
+        "Individualism": 16,
+        "Indulgence": 80,
+        "Long Term Orientation": 13,
+        "Masculinity": 58,
         "Population": 1394973,
         "Power Distance": 47,
-        "Individualism": 16,
-        "Masculinity": 58,
-        "Uncertainty Avoidance": 55,
-        "Long Term Orientation": 13,
-        "Indulgence": 80
+        "Uncertainty Avoidance": 55
     },
-    {
-        "Country Code": "TUN",
-        "Country Name": "Tunisia",
+    "TUN": {
         "Continent": "Africa",
+        "Country Name": "Tunisia",
+        "Individualism": 50,
+        "Indulgence": 30,
+        "Long Term Orientation": 25,
+        "Masculinity": 40,
         "Population": 11694719,
         "Power Distance": 70,
-        "Individualism": 50,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 25,
-        "Indulgence": 30
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "TUR",
-        "Country Name": "Turkey",
+    "TUR": {
         "Continent": "Asia",
+        "Country Name": "Turkey",
+        "Individualism": 37,
+        "Indulgence": 49,
+        "Long Term Orientation": 46,
+        "Masculinity": 45,
         "Population": 83429615,
         "Power Distance": 66,
-        "Individualism": 37,
-        "Masculinity": 45,
-        "Uncertainty Avoidance": 85,
-        "Long Term Orientation": 46,
-        "Indulgence": 49
+        "Uncertainty Avoidance": 85
     },
-    {
-        "Country Code": "TKM",
-        "Country Name": "Turkmenistan",
+    "TKM": {
         "Continent": "Asia",
+        "Country Name": "Turkmenistan",
+        "Individualism": 30,
+        "Indulgence": 50,
+        "Long Term Orientation": 40,
+        "Masculinity": 40,
         "Population": 5942089,
         "Power Distance": 80,
-        "Individualism": 30,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 80,
-        "Long Term Orientation": 40,
-        "Indulgence": 50
+        "Uncertainty Avoidance": 80
     },
-    {
-        "Country Code": "UGA",
-        "Country Name": "Uganda",
+    "UGA": {
         "Continent": "Africa",
+        "Country Name": "Uganda",
+        "Individualism": 25,
+        "Indulgence": 52,
+        "Long Term Orientation": 24,
+        "Masculinity": 60,
         "Population": 44269594,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 60,
-        "Uncertainty Avoidance": 60,
-        "Long Term Orientation": 24,
-        "Indulgence": 52
+        "Uncertainty Avoidance": 60
     },
-    {
-        "Country Code": "UKR",
-        "Country Name": "Ukraine",
+    "UKR": {
         "Continent": "Europe",
+        "Country Name": "Ukraine",
+        "Individualism": 40,
+        "Indulgence": 14,
+        "Long Term Orientation": 86,
+        "Masculinity": 40,
         "Population": 43993638,
         "Power Distance": 90,
-        "Individualism": 40,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 90,
-        "Long Term Orientation": 86,
-        "Indulgence": 14
+        "Uncertainty Avoidance": 90
     },
-    {
-        "Country Code": "ARE",
-        "Country Name": "United Arab Emirates",
+    "ARE": {
         "Continent": "Asia",
+        "Country Name": "United Arab Emirates",
+        "Individualism": 25,
+        "Indulgence": 60,
+        "Long Term Orientation": 20,
+        "Masculinity": 40,
         "Population": 9770529,
         "Power Distance": 90,
-        "Individualism": 25,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 80,
-        "Long Term Orientation": 20,
-        "Indulgence": 60
+        "Uncertainty Avoidance": 80
     },
-    {
-        "Country Code": "USA",
-        "Country Name": "United States",
+    "USA": {
         "Continent": "Americas",
+        "Country Name": "United States",
+        "Individualism": 91,
+        "Indulgence": 68,
+        "Long Term Orientation": 26,
+        "Masculinity": 62,
         "Population": 329064917,
         "Power Distance": 40,
-        "Individualism": 91,
-        "Masculinity": 62,
-        "Uncertainty Avoidance": 46,
-        "Long Term Orientation": 26,
-        "Indulgence": 68
+        "Uncertainty Avoidance": 46
     },
-    {
-        "Country Code": "URY",
-        "Country Name": "Uruguay",
+    "URY": {
         "Continent": "Americas",
+        "Country Name": "Uruguay",
+        "Individualism": 36,
+        "Indulgence": 40,
+        "Long Term Orientation": 26,
+        "Masculinity": 38,
         "Population": 3461734,
         "Power Distance": 61,
-        "Individualism": 36,
-        "Masculinity": 38,
-        "Uncertainty Avoidance": 100,
-        "Long Term Orientation": 26,
-        "Indulgence": 40
+        "Uncertainty Avoidance": 100
     },
-    {
-        "Country Code": "UZB",
-        "Country Name": "Uzbekistan",
+    "UZB": {
         "Continent": "Asia",
+        "Country Name": "Uzbekistan",
+        "Individualism": 20,
+        "Indulgence": 35,
+        "Long Term Orientation": 60,
+        "Masculinity": 40,
         "Population": 32981716,
         "Power Distance": 90,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 60,
-        "Indulgence": 35
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "VEN",
-        "Country Name": "Venezuela",
+    "VEN": {
         "Continent": "Americas",
+        "Country Name": "Venezuela",
+        "Individualism": 12,
+        "Indulgence": 100,
+        "Long Term Orientation": 16,
+        "Masculinity": 73,
         "Population": 28515829,
         "Power Distance": 81,
-        "Individualism": 12,
-        "Masculinity": 73,
-        "Uncertainty Avoidance": 76,
-        "Long Term Orientation": 16,
-        "Indulgence": 100
+        "Uncertainty Avoidance": 76
     },
-    {
-        "Country Code": "VNM",
-        "Country Name": "Vietnam",
+    "VNM": {
         "Continent": "Asia",
+        "Country Name": "Vietnam",
+        "Individualism": 20,
+        "Indulgence": 35,
+        "Long Term Orientation": 57,
+        "Masculinity": 40,
         "Population": 96462106,
         "Power Distance": 70,
-        "Individualism": 20,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 30,
-        "Long Term Orientation": 57,
-        "Indulgence": 35
+        "Uncertainty Avoidance": 30
     },
-    {
-        "Country Code": "ESH",
-        "Country Name": "Western Sahara",
+    "ESH": {
         "Continent": "Africa",
+        "Country Name": "Western Sahara",
+        "Individualism": 40,
+        "Indulgence": 20,
+        "Long Term Orientation": 10,
+        "Masculinity": 50,
         "Population": 582463,
         "Power Distance": 70,
-        "Individualism": 40,
-        "Masculinity": 50,
-        "Uncertainty Avoidance": 70,
-        "Long Term Orientation": 10,
-        "Indulgence": 20
+        "Uncertainty Avoidance": 70
     },
-    {
-        "Country Code": "YEM",
-        "Country Name": "Yemen",
+    "YEM": {
         "Continent": "Asia",
+        "Country Name": "Yemen",
+        "Individualism": 25,
+        "Indulgence": 30,
+        "Long Term Orientation": 25,
+        "Masculinity": 65,
         "Population": 29161922,
         "Power Distance": 70,
-        "Individualism": 25,
-        "Masculinity": 65,
-        "Uncertainty Avoidance": 80,
-        "Long Term Orientation": 25,
-        "Indulgence": 30
+        "Uncertainty Avoidance": 80
     },
-    {
-        "Country Code": "ZMB",
-        "Country Name": "Zambia",
+    "ZMB": {
         "Continent": "Africa",
+        "Country Name": "Zambia",
+        "Individualism": 35,
+        "Indulgence": 42,
+        "Long Term Orientation": 30,
+        "Masculinity": 40,
         "Population": 17861030,
         "Power Distance": 60,
-        "Individualism": 35,
-        "Masculinity": 40,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 30,
-        "Indulgence": 42
+        "Uncertainty Avoidance": 50
     },
-    {
-        "Country Code": "ZWE",
-        "Country Name": "Zimbabwe",
+    "ZWE": {
         "Continent": "Africa",
+        "Country Name": "Zimbabwe",
+        "Individualism": 30,
+        "Indulgence": 28,
+        "Long Term Orientation": 15,
+        "Masculinity": 30,
         "Population": 14645468,
         "Power Distance": 70,
-        "Individualism": 30,
-        "Masculinity": 30,
-        "Uncertainty Avoidance": 50,
-        "Long Term Orientation": 15,
-        "Indulgence": 28
+        "Uncertainty Avoidance": 50
     }
-];
+};
 
 export default data;

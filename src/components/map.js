@@ -12,6 +12,11 @@ const MAPBOX_TOKEN =
 const HoverInfoContainer = styled.div`
   position: absolute;
   background: ${theme.colors.background} 80%;
+  font-size: 15px;
+  padding: 1em;
+  border-radius: 20px;
+  // border: solid;
+  box-shadow: 0 0 12px #999999; //${theme.colors.text};
 `;
 
 export default function Map(props) {
@@ -30,29 +35,27 @@ export default function Map(props) {
   // }
 
   const matchExpression = useMemo(() => {
-    const exp = ['match', ['get', 'iso_3166_1_alpha_3']];
+    const expression = ['match', ['get', 'iso_3166_1_alpha_3']];
     // computeMatchExpression();
     const column = props.dimension;
     // const matchExpression = ['match', ['get', 'iso_3166_1_alpha_3']];
 
     var scale = chroma.scale(['#00b3ff', '#eeeeee', '#ff4c00']).mode('lab');
-    for (const row of dimensionData) {
-      if (row[column] === 'undefined' || row[column] == null) {
-        continue;
-      }
-      const color = scale(row[column] / 100).hex();
+    for (const row in dimensionData) {
+      // if (row[column] === 'undefined' || row[column] == null) {
+      //   continue;
+      // }
+      const color = scale(dimensionData[row][column] / 100).hex();
       // intensity = pickHex();//95 - intensity * 0.4;
-      // console.log(intensity);
       // const color = `hsl(17.9, 100%, ${intensity}%)`;
 
-      exp.push(row['Country Code'], color);
+      expression.push(row, color);
     }
 
     // Last value is the default, used where there is no data
-    exp.push('rgba(255, 0, 0, 0)');
-    return exp;
+    expression.push('rgba(255, 0, 0, 0)');
+    return expression;
   }, [props.dimension]);
-
 
   const layerProps = {
     id: 'data',
@@ -65,7 +68,6 @@ export default function Map(props) {
       // 'fill-opacity': 0.8
     },
   };
-
 
   const [hoverInfo, setHoverInfo] = useState(null);
 
@@ -80,10 +82,10 @@ export default function Map(props) {
     setHoverInfo(
       hoveredFeature
         ? {
-          feature: hoveredFeature,
-          x: offsetX,
-          y: offsetY,
-        }
+            feature: hoveredFeature,
+            x: offsetX,
+            y: offsetY,
+          }
         : null
     );
   }, []);
@@ -106,7 +108,16 @@ export default function Map(props) {
       </Source>
       {hoverInfo && (
         <HoverInfoContainer style={{ left: hoverInfo.x, top: hoverInfo.y }}>
-          {hoverInfo.features.properties.name}
+          {hoverInfo.feature.properties.name_en}:{' '}
+          {dimensionData[hoverInfo.feature.properties.iso_3166_1_alpha_3]
+            ? dimensionData[hoverInfo.feature.properties.iso_3166_1_alpha_3][
+                props.dimension
+              ] > 100
+              ? 100
+              : dimensionData[hoverInfo.feature.properties.iso_3166_1_alpha_3][
+                  props.dimension
+                ]
+            : 'Unstudied'}
         </HoverInfoContainer>
       )}
     </ReactMapGL>
