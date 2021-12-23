@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: 'https://www.rustom.dev',
     title: 'Hofstede Globe',
   },
-  pathPrefix: '/hofstedes-globe'
+  pathPrefix: '/hofstedes-globe',
   plugins: [
     'gatsby-plugin-styled-components',
     {
