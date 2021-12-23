@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.rustom.dev/hofstede-globe',
+    siteUrl: 'https://www.rustom.dev',
     title: 'Hofstede Globe',
   },
+  pathPrefix: '/hofstedes-globe'
   plugins: [
     'gatsby-plugin-styled-components',
     {
