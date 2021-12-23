@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '@styles';
 
 const Container = styled.div`
-  position: fixed; 
+  position: fixed;
   right: 10%;
   bottom: 10%;
   background: ${theme.colors.background};
@@ -39,9 +39,7 @@ export default function ColorKey() {
   return (
     <Container>
       <Colors></Colors>
-      <KeyText>
-        0 50 100
-      </KeyText>
+      <KeyText>0 50 100</KeyText>
     </Container>
   );
 }

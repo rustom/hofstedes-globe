@@ -4,7 +4,7 @@ import { GlobalStyle, theme } from '@styles';
 import { ColorKey, Map, Sidebar } from '@components';
 
 const Container = styled.div`
-  position: fixed;   
+  position: fixed;
   width: 100vw;
   height: 100vh;
 `;
@@ -20,7 +20,6 @@ const dimensionList = [
 
 export default function Home() {
   const [dimension, setDimension] = useState('Power Distance');
-
 
   return (
     <>

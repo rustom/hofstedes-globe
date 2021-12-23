@@ -35,7 +35,7 @@ const DimensionItem = styled(motion.p)`
   margin: 1em;
 
   mix-blend-mode: difference;
-    
+
   // position: relative;
   cursor: pointer;
 `;
@@ -53,14 +53,17 @@ export default function MenuItem(props) {
       onClick={() => {
         props.setDimension(props.dimension);
         document.getElementById('selectionHighlight').style.top =
-          'calc(' + document.getElementById(props.dimension.split(" ").join("")).getBoundingClientRect().top + 'px - 0.8em)';
+          'calc(' +
+          document
+            .getElementById(props.dimension.split(' ').join(''))
+            .getBoundingClientRect().top +
+          'px - 0.8em)';
       }}
     >
       {/* <div className="icon-placeholder" style={style} /> */}
       {/* <a> */}
       {props.dimension}
       {/* </a> */}
-
     </DimensionItem>
   );
 }

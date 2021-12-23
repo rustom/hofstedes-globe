@@ -20,6 +20,6 @@ export default function DimensionInfo(props) {
         <br />
         {dimensionInfo[props.dimension]}
       </InfoText>
-    </div >
+    </div>
   );
 }

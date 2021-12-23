@@ -14,11 +14,11 @@ const Container = styled.div`
   position: absolute;
   overflow-y: scroll;
   scrollbar-width: none;
-    -ms-overflow-style: none;
-    ::-webkit-scrollbar {
-      width: 0;
-      height: 0;
-    }
+  -ms-overflow-style: none;
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
   left: 0px;
   top: 0px;
   background: ${theme.colors.background};
@@ -76,9 +76,7 @@ export default function Sidebar(props) {
         Hofstede's Globe is a tool for visualizing Geert Hofstede's 6 Cultural
         Dimensions.
       </p>
-      <p style={{ marginBottom: '0px' }}>
-        What's that?
-      </p>
+      <p style={{ marginBottom: '0px' }}>What's that?</p>
 
       <div style={{ fontSize: '15px' }}>
         <br />
@@ -86,7 +84,11 @@ export default function Sidebar(props) {
         <br />
       </div>
 
-      <Menu dimensions={props.dimensions} dimension={props.dimension} setDimension={props.setDimension} />
+      <Menu
+        dimensions={props.dimensions}
+        dimension={props.dimension}
+        setDimension={props.setDimension}
+      />
 
       <DimensionInfo dimension={props.dimension} />
     </Container>

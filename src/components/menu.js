@@ -13,7 +13,6 @@ import { theme } from '@styles';
 //   },
 // };
 
-
 const DimensionSelector = styled(motion.div)`
   background: transparent;
 `;
@@ -36,10 +35,15 @@ const SelectionHighlight = styled(motion.div)`
 export default function Menu(props) {
   function resizeSelector() {
     document.getElementById('selectionHighlight').style.top =
-      'calc(' + document.getElementById(props.dimension.split(" ").join("")).getBoundingClientRect().top + 'px - 0.8em + ' +
-      document.getElementById('sidebar').scrollTop + 'px)';
-    document.getElementById('selectionHighlight').style.width = '500px';//document.getElementById('dimensionSelector').getBoundingClientRect().width - 50 + 'px';
-    document.getElementById('selectionHighlight').style.left = '-160px';//document.getElementById('dimensionSelector').getBoundingClientRect().right + 'px';
+      'calc(' +
+      document
+        .getElementById(props.dimension.split(' ').join(''))
+        .getBoundingClientRect().top +
+      'px - 0.8em + ' +
+      document.getElementById('sidebar').scrollTop +
+      'px)';
+    document.getElementById('selectionHighlight').style.width = '500px'; //document.getElementById('dimensionSelector').getBoundingClientRect().width - 50 + 'px';
+    document.getElementById('selectionHighlight').style.left = '-160px'; //document.getElementById('dimensionSelector').getBoundingClientRect().right + 'px';
   }
 
   window.addEventListener('resize', resizeSelector);
@@ -51,14 +55,14 @@ export default function Menu(props) {
   }, []);
 
   return (
-    <DimensionSelector id='dimensionSelector'>
+    <DimensionSelector id="dimensionSelector">
       <SelectionHighlight id="selectionHighlight" />
 
       {props.dimensions &&
         props.dimensions.map((dimension, i) => {
           return (
             <MenuItem
-              childId={dimension.split(" ").join("")}
+              childId={dimension.split(' ').join('')}
               key={i}
               dimension={dimension}
               setDimension={props.setDimension}
