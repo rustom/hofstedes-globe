@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
 import { ColorKey, Map, MoreInfo, Sidebar } from '@components';
+import { AnimatePresence, motion } from 'framer-motion';
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -38,7 +39,13 @@ export default function Home() {
             moreInfo={moreInfo}
             setMoreInfo={setMoreInfo}
           />
-          {moreInfo && <MoreInfo />}
+          {/* <AnimatePresence> */}
+          <MoreInfo moreInfo={moreInfo} setMoreInfo={setMoreInfo} />
+          {/* {moreInfo && (
+            )} */}
+          {/* // <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            // </motion.div> */}
+          {/* </AnimatePresence> */}
           {/* </ChildContainer> */}
           {/* <ChildContainer style={{position: 'absolute'}}> */}
           {/* </ChildContainer> */}

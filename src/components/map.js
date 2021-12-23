@@ -5,6 +5,13 @@ import { motion, useAnimation } from 'framer-motion';
 import chroma from 'chroma-js';
 import { theme } from '@styles';
 import { dimensionData } from '@data';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
+
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass =
+  require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const MAPBOX_TOKEN =
   'pk.eyJ1IjoicnVzdG9tLWljaGhhcG9yaWEiLCJhIjoiY2t4Y3YxNWN6M2RpeDJwbXVpdnlsYWducSJ9.14tOov0CCEUjhs99yMRdbA';
@@ -22,7 +29,7 @@ const HoverInfoContainer = styled.div`
 export default function Map(props) {
   const [viewport, setViewport] = useState({
     width: props.mapWidth,
-    height: window.innerHeight,
+    height: '100vh',
     mapboxApiAccessToken: MAPBOX_TOKEN,
     attributionControl: false,
     logo: false,

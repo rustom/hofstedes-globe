@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { DimensionInfo, Menu } from '@components';
 import { theme } from '@styles';
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   // width: 100%;
   // height: 100%;
   // margin: 0;
@@ -30,7 +30,7 @@ const Container = styled.div`
   // transition-delay: 1s;
 `;
 
-const Title = styled.h1`
+const Title = styled(motion.h1)`
   position: relative;
   text-align: center;
   background: ${theme.colors.background};
@@ -40,7 +40,7 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-const TitleBoxLeft = styled.div`
+const TitleBoxLeft = styled(motion.div)`
   position: absolute;
   background: ${theme.colors.accent};
   left: 28px;
@@ -49,7 +49,7 @@ const TitleBoxLeft = styled.div`
   width: 5em;
 `;
 
-const TitleBoxRight = styled.div`
+const TitleBoxRight = styled(motion.div)`
   position: absolute;
   background: ${theme.colors.accent};
   right: 25px;
@@ -58,55 +58,80 @@ const TitleBoxRight = styled.div`
   width: 5em;
 `;
 
-const Separator = styled.hr`
+const Separator = styled(motion.hr)`
   width: 80%;
 `;
 
-const MoreInfoButton = styled.button`
+const MoreInfoButton = styled(motion.button)`
   // margin: 0px;
   // background: none;
   // border: none;
   // font-family: inherit;
-  // color: inherit;
   // font-size: inherit;
   all: unset;
-  text-decoration: underline;
+  color: ${theme.colors.accent};
+  // text-decoration: underline;
 `;
 
-const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
+const AnimatedText = styled(motion.p)``;
+
+const containerAnim = {
+  beginning: { opacity: 0, left: '-30vw' },
+  final: {
+    opacity: 1,
+    left: 0,
+    transition: { duration: 2, when: 'beforeChildren', staggerChildren: 0.2 },
+  },
+  exit: { opacity: 0 },
+};
+const item = {
+  beginning: { opacity: 0, y: 20 },
+  final: { opacity: 1, y: 0 },
+  exit: { opacity: 0 },
+};
 
 export default function Sidebar(props) {
   return (
-    <Container id="sidebar">
-      <TitleBoxLeft />
-      <TitleBoxRight />
-      <Title>Hofstede's Globe</Title>
-
-      <p style={{ paddingTop: '5%' }}>
-        Hofstede's Globe is a tool for visualizing Geert Hofstede's 6 Cultural
-        Dimensions.
-      </p>
-      <MoreInfoButton
-        onClick={() => {
-          props.setMoreInfo(!props.moreInfo);
-        }}
+    <AnimatePresence>
+      <Container
+        id="sidebar"
+        variants={containerAnim}
+        initial="beginning"
+        animate="final"
+        exit="exit"
       >
-        What's that?
-      </MoreInfoButton>
+        <TitleBoxLeft variants={item} />
+        <TitleBoxRight variants={item} />
+        <Title variants={item}>Hofstede's Globe</Title>
 
-      <div style={{ fontSize: '15px' }}>
-        <br />
-        <Separator />
-        <br />
-      </div>
+        <AnimatedText variants={item} style={{ paddingTop: '5%' }}>
+          Hofstede's Globe is a tool for visualizing Geert Hofstede's 6 Cultural
+          Dimensions.
+        </AnimatedText>
+        <MoreInfoButton
+          onClick={() => {
+            props.setMoreInfo(!props.moreInfo);
+          }}
+          variants={item}
+        >
+          What's that?
+        </MoreInfoButton>
 
-      <Menu
-        dimensions={props.dimensions}
-        dimension={props.dimension}
-        setDimension={props.setDimension}
-      />
+        <div style={{ fontSize: '15px' }}>
+          <br />
+          <Separator variants={item} />
+          <br />
+        </div>
 
-      <DimensionInfo dimension={props.dimension} />
-    </Container>
+        <Menu
+          dimensions={props.dimensions}
+          dimension={props.dimension}
+          setDimension={props.setDimension}
+          variants={item}
+        />
+
+        <DimensionInfo dimension={props.dimension} variants={item} />
+      </Container>
+    </AnimatePresence>
   );
 }

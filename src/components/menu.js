@@ -32,6 +32,12 @@ const SelectionHighlight = styled(motion.div)`
   // mix-blend-mode: difference;
 `;
 
+const item = {
+  beginning: { opacity: 0, y: 20 },
+  final: { opacity: 1, y: 0 },
+  exit: { opacity: 0 },
+};
+
 export default function Menu(props) {
   function resizeSelector() {
     document.getElementById('selectionHighlight').style.top =
@@ -45,10 +51,10 @@ export default function Menu(props) {
     document.getElementById('selectionHighlight').style.width = '500px'; //document.getElementById('dimensionSelector').getBoundingClientRect().width - 50 + 'px';
     document.getElementById('selectionHighlight').style.left = '-160px'; //document.getElementById('dimensionSelector').getBoundingClientRect().right + 'px';
   }
-
-  window.addEventListener('resize', resizeSelector);
-
-  window.addEventListener('click', resizeSelector);
+  if (typeof window !== 'undefined') {
+    window.addEventListener('resize', resizeSelector);
+    window.addEventListener('click', resizeSelector);
+  }
 
   useEffect(() => {
     resizeSelector();
