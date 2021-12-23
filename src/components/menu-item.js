@@ -12,7 +12,6 @@ const DimensionItem = styled(motion.p)`
 
   mix-blend-mode: difference;
 
-
   cursor: pointer;
 `;
 

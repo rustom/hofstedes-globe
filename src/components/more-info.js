@@ -62,7 +62,7 @@ const item = {
   exit: { opacity: 0 },
 };
 export default function MoreInfo(props) {
-  useEffect(() => { });
+  useEffect(() => {});
 
   return (
     <AnimatePresence>
@@ -82,24 +82,24 @@ export default function MoreInfo(props) {
               // const p = new Promise((resolve) => setTimeout(resolve, 2000));
               // p.then(() => { props.setMoreInfo(false) });
             }}
-          // whileHover={{ scale: 1.5, transition: { duration: 0.1 } }}
-          // whileTap={{ scale: 0.85, transition: { duration: 0.1 } }}
+            // whileHover={{ scale: 1.5, transition: { duration: 0.1 } }}
+            // whileTap={{ scale: 0.85, transition: { duration: 0.1 } }}
           >
             ×
           </CloseButton>
           <br />
           <AnimatedText key="1" variants={item}>
             Geert Hofstede, assisted by others, came up with six basic issues
-            that society needs to come to term with in order to organize
-            itself. These are called dimensions of culture. Each of them has
-            been expressed on a scale that runs roughly from 0 to 100.
+            that society needs to come to term with in order to organize itself.
+            These are called dimensions of culture. Each of them has been
+            expressed on a scale that runs roughly from 0 to 100.
           </AnimatedText>
           <AnimatedText key="2" variants={item}>
             Each dimension has been derived by comparing many, but not all,
             countries in the world. The findings can be summarized into six
             world maps of the distribution of that dimension. Of course, in
-            reality there can be quite a bit of within-country variation;
-            these maps should be seen as rough "climate maps" of culture.
+            reality there can be quite a bit of within-country variation; these
+            maps should be seen as rough "climate maps" of culture.
           </AnimatedText>
           <AnimatedText key="3" variants={item}>
             This website allows you to explore the Hofstede's estimated scores
@@ -130,8 +130,8 @@ export default function MoreInfo(props) {
             .
           </AnimatedText>
           <AnimatedText key="6" variants={item}>
-            Thank you so much for exploring my project! You can learn more
-            about me at{' '}
+            Thank you so much for exploring my project! You can learn more about
+            me at{' '}
             <OutboundLink
               href="https://rustom.dev/"
               aria-label="Hofstede's Globe Source Code"

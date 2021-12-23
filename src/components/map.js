@@ -88,10 +88,10 @@ export default function Map(props) {
     setHoverInfo(
       hoveredFeature
         ? {
-          feature: hoveredFeature,
-          x: offsetX,
-          y: offsetY,
-        }
+            feature: hoveredFeature,
+            x: offsetX,
+            y: offsetY,
+          }
         : null
     );
   }, []);
@@ -117,12 +117,12 @@ export default function Map(props) {
           {hoverInfo.feature.properties.name_en}:{' '}
           {dimensionData[hoverInfo.feature.properties.iso_3166_1_alpha_3]
             ? dimensionData[hoverInfo.feature.properties.iso_3166_1_alpha_3][
-              props.dimension
-            ] > 100
+                props.dimension
+              ] > 100
               ? 100
               : dimensionData[hoverInfo.feature.properties.iso_3166_1_alpha_3][
-              props.dimension
-              ]
+                  props.dimension
+                ]
             : 'Unstudied'}
         </HoverInfoContainer>
       )}
