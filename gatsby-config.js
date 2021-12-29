@@ -5,6 +5,18 @@ module.exports = {
   },
   pathPrefix: '/hofstedes-globe',
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: ['G-9KHFVG54ST'],
+      },
+      gtagConfig: {
+        anonymize_ip: true,
+      },
+      pluginConfig: {
+        head: true,
+      },
+    },
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-google-analytics',
