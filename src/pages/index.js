@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
-import { ColorKey, Map, MoreInfo, Sidebar } from '@components';
+import { ColorKey, Head, Map, MoreInfo, Sidebar } from '@components';
 import { motion } from 'framer-motion';
 
 const Container = styled(motion.div)`
@@ -25,6 +25,7 @@ export default function Home() {
 
   return (
     <>
+      <Head />
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Container>

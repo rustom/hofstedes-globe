@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.rustom.dev',
-    title: 'Hofstede Globe',
+    title: "Hofstede's Globe",
+    description: "Hofstede's Globe is a tool for visualizing Geert Hofstede's 6 Cultural Dimensions.",
+    image: './src/images/icon.png', 
+    twitterUsername: '@rustomtweets'
   },
   pathPrefix: '/hofstedes-globe',
   plugins: [
