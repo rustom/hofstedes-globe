@@ -5,10 +5,6 @@ import { DimensionInfo, Menu } from '@components';
 import { theme } from '@styles';
 
 const Container = styled(motion.div)`
-  // width: 100%;
-  // height: 100%;
-  // margin: 0;
-
   width: 25vw;
   height: calc(100vh - 80px);
   position: absolute;
@@ -26,8 +22,6 @@ const Container = styled(motion.div)`
   box-shadow: 0 0 30px #999999;
   padding: 40px;
   min-width: 390px;
-  // transform: translate(2vw, 3vh);
-  // transition-delay: 1s;
 `;
 
 const Title = styled(motion.h1)`
